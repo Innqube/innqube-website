@@ -17,6 +17,7 @@ import {TrabajaConNosotrosComponent} from './trabaja-con-nosotros/trabaja-con-no
 import {PrincipalComponent} from './principal/principal.component';
 import {ScrollSpyModule} from 'ngx-scrollspy';
 import {ScrollSpyParallaxModule} from 'ngx-scrollspy/dist/plugin/parallax';
+import {ScrollSpyAffixModule} from 'ngx-scrollspy/dist/plugin/affix';
 
 export function createTranslateLoader(http: Http) {
     return new TranslateStaticLoader(http, '/assets/i18n', '.json');
@@ -46,7 +47,8 @@ export function createTranslateLoader(http: Http) {
             deps: [Http]
         }),
         ScrollSpyModule.forRoot(),
-        ScrollSpyParallaxModule
+        ScrollSpyParallaxModule,
+        ScrollSpyAffixModule
     ],
     providers: [
         TranslateService
