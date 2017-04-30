@@ -6,7 +6,6 @@ import {Http, HttpModule} from '@angular/http';
 import {AppComponent} from './app.component';
 import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
-import {ContentComponent} from './content/content.component';
 import {TranslateLoader, TranslateModule, TranslateService, TranslateStaticLoader} from 'ng2-translate';
 import {InicioComponent} from './inicio/inicio.component';
 import {PorqueComponent} from './porque/porque.component';
@@ -15,20 +14,27 @@ import {ComoComponent} from './como/como.component';
 import {QuienesComponent} from './quienes/quienes.component';
 import {HablamosComponent} from './hablamos/hablamos.component';
 import {TrabajaConNosotrosComponent} from './trabaja-con-nosotros/trabaja-con-nosotros.component';
+import {PrincipalComponent} from './principal/principal.component';
+import {ScrollSpyModule} from 'ngx-scrollspy';
+import {ScrollSpyParallaxModule} from 'ngx-scrollspy/dist/plugin/parallax';
+
+export function createTranslateLoader(http: Http) {
+    return new TranslateStaticLoader(http, '/assets/i18n', '.json');
+}
 
 @NgModule({
     declarations: [
         AppComponent,
         HeaderComponent,
         FooterComponent,
-        ContentComponent,
         InicioComponent,
         PorqueComponent,
         QueComponent,
         ComoComponent,
         QuienesComponent,
         HablamosComponent,
-        TrabajaConNosotrosComponent
+        TrabajaConNosotrosComponent,
+        PrincipalComponent
     ],
     imports: [
         BrowserModule,
@@ -36,9 +42,11 @@ import {TrabajaConNosotrosComponent} from './trabaja-con-nosotros/trabaja-con-no
         HttpModule,
         TranslateModule.forRoot({
             provide: TranslateLoader,
-            useFactory: (http: Http) => new TranslateStaticLoader(http, '/assets/i18n', '.json'),
+            useFactory: createTranslateLoader,
             deps: [Http]
-        })
+        }),
+        ScrollSpyModule.forRoot(),
+        ScrollSpyParallaxModule
     ],
     providers: [
         TranslateService
