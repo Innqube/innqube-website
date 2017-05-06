@@ -1,8 +1,6 @@
-<div [scrollSpyAffix]="{topMargin: 50}" class="seccion header" id="header">
-    <div class="row">
-        <div class="col-25">
-        </div>
-        <div class="col-75 align-right">
+<div [scrollSpyAffix]="{topMargin: 100}" class="seccion header" id="header">
+    <div class="inside">
+        <nav class="site-navigation">
             <ul>
                 <li>
                     <a>{{'INICIO' | translate}}</a>
@@ -26,6 +24,11 @@
                     <a>{{'TRABAJA_CON_NOSOTROS' | translate}}</a>
                 </li>
             </ul>
-        </div>
+        </nav>
+        <a class="site-branding" href="http://www.innqube.com"
+           [title]="Innqube - + 'DESARROLLO_A_MEDIDA' | translate">
+            <img class="light" src="../../assets/images/logotipo-color-typo-light.png"/>
+            <img class="dark" src="../../assets/images/logotipo-color-typo-dark.png"/>
+        </a>
     </div>
 </div>
