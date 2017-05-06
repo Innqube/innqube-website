@@ -1,15 +1,21 @@
 import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-que',
-  templateUrl: './que.component.html',
-  styleUrls: ['./que.component.css']
+    selector: 'app-que',
+    templateUrl: './que.component.html',
+    styleUrls: ['./que.component.css']
 })
 export class QueComponent implements OnInit {
 
-  constructor() { }
+    options = {
+        ratio: -.3,
+        initValue: -800
+    };
 
-  ngOnInit() {
-  }
+    constructor() {
+    }
+
+    ngOnInit() {
+    }
 
 }

@@ -16,9 +16,18 @@ body {
     clear: both;
 }
 
+.clear-fix {
+    clear: both;
+}
+
 .col-25 {
     float: left;
     width: 25%;
+}
+
+.col-33 {
+    float: left;
+    width: 33.333333%;
 }
 
 .col-50 {
@@ -55,6 +64,12 @@ a:hover {
 
 .container-seccion {
     padding: 20px;
+    position: relative;
+}
+
+.container-seccion.white {
+    background: #fff;
+    color: #000;
 }
 
 .site-content {
@@ -138,8 +153,15 @@ a:hover {
     padding-bottom: 5.9375rem;
 }
 
-.static-content-cover {
+.inicio .static-content-cover {
     background-image: url("./assets/images/devices.jpg");
+}
+
+.que .static-content-cover {
+    background-image: url("./assets/images/code.jpg");
+}
+
+.static-content-cover {
     background-size: cover;
     background-attachment: fixed;
     opacity: 0.5;
@@ -154,4 +176,8 @@ a:hover {
 .inner-section {
     position: relative;
     z-index: 3;
+}
+
+.column-header {
+    font-size: 1.7em;
 }
