@@ -18,6 +18,7 @@ import {PrincipalComponent} from './principal/principal.component';
 import {ScrollSpyModule} from 'ngx-scrollspy';
 import {ScrollSpyParallaxModule} from 'ngx-scrollspy/dist/plugin/parallax';
 import {ScrollSpyAffixModule} from 'ngx-scrollspy/dist/plugin/affix';
+import {QuotesComponent} from './quotes/quotes.component';
 
 export function createTranslateLoader(http: Http) {
     return new TranslateStaticLoader(http, '/assets/i18n', '.json');
@@ -35,7 +36,8 @@ export function createTranslateLoader(http: Http) {
         QuienesComponent,
         HablamosComponent,
         TrabajaConNosotrosComponent,
-        PrincipalComponent
+        PrincipalComponent,
+        QuotesComponent
     ],
     imports: [
         BrowserModule,

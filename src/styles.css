@@ -7,7 +7,7 @@ html,
 body {
     padding: 0;
     margin: 0;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
 }
@@ -70,6 +70,42 @@ a:hover {
 .container-seccion.white {
     background: #fff;
     color: #000;
+}
+
+.container-seccion.quotes {
+    background: #f57e37;
+    padding: 60px;
+}
+
+.container-seccion.quotes .quote {
+    font-size: 2.5em;
+    padding: 20px;
+}
+
+.container-seccion.quotes .author {
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+.container-seccion.quotes .buttons {
+    margin: 20px;
+}
+
+.container-seccion.quotes button {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.container-seccion.quotes button:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.container-seccion.quotes {
+
 }
 
 .site-content {
