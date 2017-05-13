@@ -197,6 +197,10 @@ a:hover {
     background-image: url("./assets/images/code.jpg");
 }
 
+.como .static-content-cover {
+    background-image: url("./assets/images/merrel.jpg");
+}
+
 .static-content-cover {
     background-size: cover;
     background-attachment: fixed;
@@ -216,4 +220,8 @@ a:hover {
 
 .column-header {
     font-size: 1.7em;
+}
+
+.text-center {
+    text-align: center;
 }

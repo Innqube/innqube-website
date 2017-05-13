@@ -1,3 +1,10 @@
-<p>
-  como works!
-</p>
+<div class="container-seccion como">
+    <div [scrollSpyParallax]="options" class="static-content-cover"></div>
+    <div class="inner-section">
+        <h3 class="titulo-seccion">{{'HOW_WE_WORK' | translate}}</h3>
+        <p class="parrafo-seccion" [innerHTML]="'HOW_WE_WORK_EXPLANATION' | translate"></p>
+        <div class="text-center">
+            <img src="../../assets/images/hci.png"/>
+        </div>
+    </div>
+</div>
