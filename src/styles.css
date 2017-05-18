@@ -27,3 +27,19 @@ img.brand-dark {
 img.brand-light {
     display: block
 }
+
+.parallax-background {
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.welcome .parallax-background {
+    background-image: url("./assets/images/devices.jpg");
+}
