@@ -1,3 +1,38 @@
-<p>
-  hablamos works!
-</p>
+<div class="row">
+    <div class="col-sm-6">
+        <h3>Innqube</h3>
+        <div class="row">
+            <div class="col-sm-12">
+                <p>
+                    {{'LAST_MESSAGE' | translate}}
+                </p>
+                <p>
+                    {{'HOW_TO_GET_IN_TOUCH' | translate}}
+                </p>
+                <a href="mailto:hola@innqube.com"></a>
+                <a href="https://telegram.me/TommyBrc"></a>
+                <span>{{'PHONE_NUMBER' | translate}}: +54 9 294 466 3875</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <h3>{{'SEND_US_A_MESSAGE' | translate}}</h3>
+        <form>
+            <div class="form-group">
+                <label>{{'YOUR_NAME' | translate}}</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>{{'YOUR_EMAIL' | translate}}</label>
+                <input type="email" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>{{'YOUR_MESSAGE' | translate}}</label>
+                <textarea rows="3" class="form-control"></textarea>
+            </div>
+            <button type="submit" class="btn btn-lg btn-primary">
+                {{'SEND_MESSAGE' | translate}}
+            </button>
+        </form>
+    </div>
+</div>

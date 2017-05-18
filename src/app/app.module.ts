@@ -20,6 +20,7 @@ import {ScrollSpyParallaxModule} from 'ngx-scrollspy/dist/plugin/parallax';
 import {ScrollSpyAffixModule} from 'ngx-scrollspy/dist/plugin/affix';
 import {QuotesComponent} from './quotes/quotes.component';
 import {MemberComponent} from './member/member.component';
+import {BsDropdownModule, CollapseModule} from 'ngx-bootstrap';
 
 export function createTranslateLoader(http: Http) {
     return new TranslateStaticLoader(http, '/assets/i18n', '.json');
@@ -52,7 +53,9 @@ export function createTranslateLoader(http: Http) {
         }),
         ScrollSpyModule.forRoot(),
         ScrollSpyParallaxModule,
-        ScrollSpyAffixModule
+        ScrollSpyAffixModule,
+        BsDropdownModule.forRoot(),
+        CollapseModule.forRoot()
     ],
     providers: [
         TranslateService

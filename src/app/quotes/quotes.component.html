@@ -1,14 +1,15 @@
-<div class="container-seccion quotes">
-    <div class="inner-section">
-        <div class="quote" *ngIf="currentQuote === 0">“La clave para ganar la carrera no es competir contra las máquinas, sino competir con máquinas.”</div>
-        <div class="quote" *ngIf="currentQuote === 1">“Hay un uber para cada industria, cada producto y cada servicio. Viene una revolución de innovación… “</div>
-        <div class="quote" *ngIf="currentQuote === 2">“No tener problemas es el problema más grande.”</div>
-        <div class="author" *ngIf="currentQuote === 0">Andrew McAfee</div>
-        <div class="author" *ngIf="currentQuote === 1">Mike Beedle</div>
-        <div class="author" *ngIf="currentQuote === 2">Taiichi Ohno</div>
-        <div class="buttons">
-            <button type="button" (click)="previous()">&lt;</button>
-            <button type="button" (click)="next()">&gt;</button>
-        </div>
+<div class="jumbotron">
+    <h1 *ngIf="currentQuote === 0">“La clave para ganar la carrera no es competir contra las máquinas, sino competir con
+        máquinas.”</h1>
+    <h1 *ngIf="currentQuote === 1">“Hay un uber para cada industria, cada producto y cada servicio. Viene una revolución
+        de innovación… “</h1>
+    <h1 *ngIf="currentQuote === 2">“No tener problemas es el problema más grande.”</h1>
+    <p *ngIf="currentQuote === 0">Andrew McAfee</p>
+    <p *ngIf="currentQuote === 1">Mike Beedle</p>
+    <p *ngIf="currentQuote === 2">Taiichi Ohno</p>
+    <p></p>
+    <div class="btn-group">
+        <button class="btn btn-primary" type="button" (click)="previous()">&lt;</button>
+        <button class="btn btn-primary" type="button" (click)="next()">&gt;</button>
     </div>
 </div>
