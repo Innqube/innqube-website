@@ -16,25 +16,22 @@
         <div [collapse]="collapsed" class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a>{{'INICIO' | translate}}</a>
+                    <a pageScroll [pageScrollDuration]="500" href="#welcome">{{'INICIO' | translate}}</a>
                 </li>
                 <li>
-                    <a>{{'POR_QUE' | translate}}</a>
+                    <a pageScroll [pageScrollDuration]="500" href="#why">{{'POR_QUE' | translate}}</a>
                 </li>
                 <li>
-                    <a>{{'QUE' | translate}}</a>
+                    <a pageScroll [pageScrollDuration]="500" href="#what">{{'QUE' | translate}}</a>
                 </li>
                 <li>
-                    <a>{{'COMO' | translate}}</a>
+                    <a pageScroll [pageScrollDuration]="500" href="#how">{{'COMO' | translate}}</a>
                 </li>
                 <li>
-                    <a>{{'QUIENES' | translate}}</a>
+                    <a pageScroll [pageScrollDuration]="500" href="#who">{{'QUIENES' | translate}}</a>
                 </li>
                 <li>
-                    <a>{{'HABLAMOS' | translate}}</a>
-                </li>
-                <li>
-                    <a>{{'TRABAJA_CON_NOSOTROS' | translate}}</a>
+                    <a pageScroll [pageScrollDuration]="500" href="#letsTalk">{{'HABLAMOS' | translate}}</a>
                 </li>
             </ul>
         </div>

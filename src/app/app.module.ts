@@ -21,6 +21,9 @@ import {ScrollSpyAffixModule} from 'ngx-scrollspy/dist/plugin/affix';
 import {QuotesComponent} from './quotes/quotes.component';
 import {MemberComponent} from './member/member.component';
 import {BsDropdownModule, CollapseModule} from 'ngx-bootstrap';
+import {AppRoutingModule} from './app-routing.module';
+import {MainComponent} from './main/main.component';
+import {Ng2PageScrollModule} from 'ng2-page-scroll';
 
 export function createTranslateLoader(http: Http) {
     return new TranslateStaticLoader(http, '/assets/i18n', '.json');
@@ -40,7 +43,8 @@ export function createTranslateLoader(http: Http) {
         WorkWithUsComponent,
         PrincipalComponent,
         QuotesComponent,
-        MemberComponent
+        MemberComponent,
+        MainComponent
     ],
     imports: [
         BrowserModule,
@@ -55,7 +59,9 @@ export function createTranslateLoader(http: Http) {
         ScrollSpyParallaxModule,
         ScrollSpyAffixModule,
         BsDropdownModule.forRoot(),
-        CollapseModule.forRoot()
+        CollapseModule.forRoot(),
+        Ng2PageScrollModule.forRoot(),
+        AppRoutingModule
     ],
     providers: [
         TranslateService
