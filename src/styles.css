@@ -11,3 +11,19 @@
     background: #fff;
     color: #000;
 }
+
+.affix img.brand-dark {
+    display: block;
+}
+
+img.brand-dark {
+    display: none;
+}
+
+.affix img.brand-light {
+    display: none;
+}
+
+img.brand-light {
+    display: block
+}
