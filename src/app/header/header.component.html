@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav [scrollSpyAffix]="{topMargin: 100}" class="navbar navbar-default">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -19,19 +19,19 @@
                     <a pageScroll [pageScrollDuration]="500" href="#welcome">{{'INICIO' | translate}}</a>
                 </li>
                 <li>
-                    <a pageScroll [pageScrollDuration]="500" href="#why">{{'POR_QUE' | translate}}</a>
+                    <a pageScroll [pageScrollDuration]="500" [pageScrollOffset]="70" href="#why">{{'POR_QUE' | translate}}</a>
                 </li>
                 <li>
-                    <a pageScroll [pageScrollDuration]="500" href="#what">{{'QUE' | translate}}</a>
+                    <a pageScroll [pageScrollDuration]="500" [pageScrollOffset]="70" href="#what">{{'QUE' | translate}}</a>
                 </li>
                 <li>
-                    <a pageScroll [pageScrollDuration]="500" href="#how">{{'COMO' | translate}}</a>
+                    <a pageScroll [pageScrollDuration]="500" [pageScrollOffset]="70" href="#how">{{'COMO' | translate}}</a>
                 </li>
                 <li>
-                    <a pageScroll [pageScrollDuration]="500" href="#who">{{'QUIENES' | translate}}</a>
+                    <a pageScroll [pageScrollDuration]="500" [pageScrollOffset]="70" href="#who">{{'QUIENES' | translate}}</a>
                 </li>
                 <li>
-                    <a pageScroll [pageScrollDuration]="500" href="#letsTalk">{{'HABLAMOS' | translate}}</a>
+                    <a pageScroll [pageScrollDuration]="500" [pageScrollOffset]="70"id=""  href="#letsTalk">{{'HABLAMOS' | translate}}</a>
                 </li>
             </ul>
         </div>
