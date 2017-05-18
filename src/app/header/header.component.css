@@ -4,14 +4,14 @@
     width: 100%;
 }
 
-.navbar.affix {
+.navbar.navbar-transparent {
+    background: transparent;
+    color: #fff;
+}
+
+.navbar.navbar-transparent.affix {
     background: #fff;
     color: #000;
     width: 100%;
     z-index: 1;
-}
-
-.navbar .navbar-transparent {
-    background: transparent;
-    color: #fff;
 }
