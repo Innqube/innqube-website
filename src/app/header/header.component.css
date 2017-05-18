@@ -1,4 +1,5 @@
 .navbar {
+    border-radius: 0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -14,4 +15,20 @@
     color: #000;
     width: 100%;
     z-index: 1;
+}
+
+.navbar a {
+    color: #fff;
+}
+
+.navbar a:hover {
+    color: #000;
+}
+
+.navbar.affix a {
+    color: #000;
+}
+
+.navbar.affix a:hover {
+    color: #fff;
 }
