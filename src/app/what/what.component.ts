@@ -1,11 +1,11 @@
 import {Component, OnInit} from '@angular/core';
 
 @Component({
-    selector: 'app-que',
-    templateUrl: './que.component.html',
-    styleUrls: ['./que.component.css']
+    selector: 'app-what',
+    templateUrl: './what.component.html',
+    styleUrls: ['./what.component.css']
 })
-export class QueComponent implements OnInit {
+export class WhatComponent implements OnInit {
 
     options = {
         ratio: -.3,

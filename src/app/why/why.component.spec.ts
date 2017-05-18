@@ -1,20 +1,20 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import {QueComponent} from './que.component';
+import {WhyComponent} from './why.component';
 
-describe('QueComponent', () => {
-  let component: QueComponent;
-  let fixture: ComponentFixture<QueComponent>;
+describe('WhyComponent', () => {
+  let component: WhyComponent;
+  let fixture: ComponentFixture<WhyComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ QueComponent ]
+      declarations: [ WhyComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(QueComponent);
+    fixture = TestBed.createComponent(WhyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

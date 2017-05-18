@@ -7,13 +7,13 @@ import {AppComponent} from './app.component';
 import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
 import {TranslateLoader, TranslateModule, TranslateService, TranslateStaticLoader} from 'ng2-translate';
-import {InicioComponent} from './inicio/inicio.component';
-import {PorqueComponent} from './porque/porque.component';
-import {QueComponent} from './que/que.component';
-import {ComoComponent} from './como/como.component';
-import {QuienesComponent} from './quienes/quienes.component';
-import {HablamosComponent} from './hablamos/hablamos.component';
-import {TrabajaConNosotrosComponent} from './trabaja-con-nosotros/trabaja-con-nosotros.component';
+import {WelcomeComponent} from './welcome/welcome.component';
+import {WhyComponent} from './why/why.component';
+import {WhatComponent} from './what/what.component';
+import {HowComponent} from './how/how.component';
+import {WhoComponent} from './who/who.component';
+import {LetsTalkComponent} from './lets-talk/lets-talk';
+import {WorkWithUsComponent} from './work-with-us/work-with-us';
 import {PrincipalComponent} from './principal/principal.component';
 import {ScrollSpyModule} from 'ngx-scrollspy';
 import {ScrollSpyParallaxModule} from 'ngx-scrollspy/dist/plugin/parallax';
@@ -31,13 +31,13 @@ export function createTranslateLoader(http: Http) {
         AppComponent,
         HeaderComponent,
         FooterComponent,
-        InicioComponent,
-        PorqueComponent,
-        QueComponent,
-        ComoComponent,
-        QuienesComponent,
-        HablamosComponent,
-        TrabajaConNosotrosComponent,
+        WelcomeComponent,
+        WhyComponent,
+        WhatComponent,
+        HowComponent,
+        WhoComponent,
+        LetsTalkComponent,
+        WorkWithUsComponent,
         PrincipalComponent,
         QuotesComponent,
         MemberComponent

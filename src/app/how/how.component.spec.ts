@@ -1,20 +1,20 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import {ComoComponent} from './como.component';
+import {HowComponent} from './how.component';
 
-describe('ComoComponent', () => {
-  let component: ComoComponent;
-  let fixture: ComponentFixture<ComoComponent>;
+describe('HowComponent', () => {
+  let component: HowComponent;
+  let fixture: ComponentFixture<HowComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ComoComponent ]
+      declarations: [ HowComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ComoComponent);
+    fixture = TestBed.createComponent(HowComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
