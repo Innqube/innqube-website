@@ -1,0 +1,8 @@
+.jumbotron {
+    background: transparent;
+    margin-bottom: 0;
+}
+
+.btn-darker {
+    background: rgba(0,0,0,0.1);
+}

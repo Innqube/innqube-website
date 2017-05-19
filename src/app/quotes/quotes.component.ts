@@ -7,7 +7,22 @@ import {Component, OnInit} from '@angular/core';
 })
 export class QuotesComponent implements OnInit {
 
-    currentQuote = 0;
+    currentQuoteIndex = 0;
+    private quotes = [
+        {
+            quote: 'La clave para ganar la carrera no es competir contra las máquinas, sino competir con máquinas.',
+            author: 'Andrew McAfee'
+        },
+        {
+            quote: 'Hay un uber para cada industria, cada producto y cada servicio. Viene una revolución de innovación…',
+            author: 'Mike Beedle'
+        },
+        {
+            quote: 'No tener problemas es el problema más grande.',
+            author: 'Taiichi Ohno'
+        }
+    ];
+    currentQuote = this.quotes[0];
 
     constructor() {
     }
@@ -16,19 +31,21 @@ export class QuotesComponent implements OnInit {
     }
 
     next() {
-        if (this.currentQuote === 2) {
-            this.currentQuote = 0;
+        if (this.currentQuoteIndex === 2) {
+            this.currentQuoteIndex = 0;
         } else {
-            this.currentQuote++;
+            this.currentQuoteIndex++;
         }
+        this.currentQuote = this.quotes[this.currentQuoteIndex];
     }
 
     previous() {
-        if (this.currentQuote === 0) {
-            this.currentQuote = 2;
+        if (this.currentQuoteIndex === 0) {
+            this.currentQuoteIndex = 2;
         } else {
-            this.currentQuote--;
+            this.currentQuoteIndex--;
         }
+        this.currentQuote = this.quotes[this.currentQuoteIndex];
     }
 
 }

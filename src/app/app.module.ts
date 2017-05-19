@@ -24,6 +24,7 @@ import {BsDropdownModule, CollapseModule} from 'ngx-bootstrap';
 import {AppRoutingModule} from './app-routing.module';
 import {MainComponent} from './main/main.component';
 import {Ng2PageScrollModule} from 'ng2-page-scroll';
+import {QuoteComponent} from './quote/quote.component';
 
 export function createTranslateLoader(http: Http) {
     return new TranslateStaticLoader(http, '/assets/i18n', '.json');
@@ -44,7 +45,8 @@ export function createTranslateLoader(http: Http) {
         PrincipalComponent,
         QuotesComponent,
         MemberComponent,
-        MainComponent
+        MainComponent,
+        QuoteComponent
     ],
     imports: [
         BrowserModule,

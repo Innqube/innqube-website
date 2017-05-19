@@ -25,6 +25,11 @@ body {
     color: #000;
 }
 
+.orange {
+    background: #f57e37;
+    color: #fff;
+}
+
 .affix img.brand-dark {
     display: block;
 }

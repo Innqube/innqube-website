@@ -1,19 +1,14 @@
-<div class="section-container">
+<div class="section-container orange">
     <div class="jumbotron">
-        <h1 *ngIf="currentQuote === 0">“La clave para ganar la carrera no es competir contra las máquinas, sino competir
-            con
-            máquinas.”</h1>
-        <h1 *ngIf="currentQuote === 1">“Hay un uber para cada industria, cada producto y cada servicio. Viene una
-            revolución
-            de innovación… “</h1>
-        <h1 *ngIf="currentQuote === 2">“No tener problemas es el problema más grande.”</h1>
-        <p *ngIf="currentQuote === 0">Andrew McAfee</p>
-        <p *ngIf="currentQuote === 1">Mike Beedle</p>
-        <p *ngIf="currentQuote === 2">Taiichi Ohno</p>
+        <app-quote [quote]="currentQuote.quote" [author]="currentQuote.author"></app-quote>
         <p></p>
         <div class="btn-group">
-            <button class="btn btn-primary" type="button" (click)="previous()">&lt;</button>
-            <button class="btn btn-primary" type="button" (click)="next()">&gt;</button>
+            <button class="btn btn-darker" type="button" (click)="previous()">
+                <i class="fa fa-chevron-left"></i>
+            </button>
+            <button class="btn btn-darker" type="button" (click)="next()">
+                <i class="fa fa-chevron-right"></i>
+            </button>
         </div>
     </div>
 </div>
