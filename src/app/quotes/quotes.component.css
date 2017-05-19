@@ -4,5 +4,6 @@
 }
 
 .btn-darker {
+    background: #d46a35;
     background: rgba(0,0,0,0.1);
 }
