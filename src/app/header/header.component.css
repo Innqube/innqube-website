@@ -54,6 +54,12 @@
     padding-top: 8px;
 }
 
+.nav li a:focus {
+    border-radius: 5px;
+    color: #000;
+    outline: none;
+}
+
 .navbar-toggle {
     margin-top: 16px;
 }
