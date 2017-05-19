@@ -50,3 +50,11 @@ img.brand-light {
 .welcome .parallax-background {
     background-image: url("./assets/images/devices.jpg");
 }
+
+.what .parallax-background {
+    background-image: url("./assets/images/code.jpg");
+}
+
+.how .parallax-background {
+    background-image: url("./assets/images/merrel.jpg");
+}
