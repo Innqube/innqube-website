@@ -1,4 +1,5 @@
 import {Component, ElementRef, OnInit} from '@angular/core';
+import {ScrollSpyParallaxOptions} from 'ngx-scrollspy/dist/plugin/parallax.directive';
 
 @Component({
     selector: 'app-what',
@@ -7,16 +8,14 @@ import {Component, ElementRef, OnInit} from '@angular/core';
 })
 export class WhatComponent implements OnInit {
 
-    options = {
-        ratio: -.4,
-        initValue: -350
+    options: ScrollSpyParallaxOptions = {
+        ratio: -.4
     };
 
     constructor(private elementRef: ElementRef) {
     }
 
     ngOnInit() {
-        this.options.initValue = this.elementRef.nativeElement.offsetTop;
     }
 
 }

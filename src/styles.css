@@ -59,10 +59,12 @@ img.brand-light {
 
 .what .parallax-background {
     background-image: url("./assets/images/code.jpg");
+    opacity: 0.3;
 }
 
 .how .parallax-background {
     background-image: url("./assets/images/merrel.jpg");
+    opacity: 0.3;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -72,6 +74,14 @@ h1, h2, h3, h4, h5, h6 {
 
 h3 {
     font-size: 2.5em;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+h5 {
+    font-size: 1.5em;
 }
 
 .section h3 {
