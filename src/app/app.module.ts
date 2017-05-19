@@ -14,7 +14,6 @@ import {HowComponent} from './how/how.component';
 import {WhoComponent} from './who/who.component';
 import {LetsTalkComponent} from './lets-talk/lets-talk';
 import {WorkWithUsComponent} from './work-with-us/work-with-us';
-import {PrincipalComponent} from './principal/principal.component';
 import {ScrollSpyModule} from 'ngx-scrollspy';
 import {ScrollSpyParallaxModule} from 'ngx-scrollspy/dist/plugin/parallax';
 import {ScrollSpyAffixModule} from 'ngx-scrollspy/dist/plugin/affix';
@@ -42,7 +41,6 @@ export function createTranslateLoader(http: Http) {
         WhoComponent,
         LetsTalkComponent,
         WorkWithUsComponent,
-        PrincipalComponent,
         QuotesComponent,
         MemberComponent,
         MainComponent,

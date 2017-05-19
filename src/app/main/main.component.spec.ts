@@ -10,6 +10,15 @@ import {HowComponent} from '../how/how.component';
 import {WhoComponent} from '../who/who.component';
 import {LetsTalkComponent} from '../lets-talk/lets-talk';
 import {FooterComponent} from '../footer/footer.component';
+import {ScrollSpyAffixModule} from 'ngx-scrollspy/dist/plugin/affix';
+import {CollapseModule} from 'ngx-bootstrap';
+import {Ng2PageScrollModule} from 'ng2-page-scroll';
+import {TranslateModule} from 'ng2-translate';
+import {ScrollSpyParallaxModule} from 'ngx-scrollspy/dist/plugin/parallax';
+import {QuoteComponent} from '../quote/quote.component';
+import {MemberComponent} from '../member/member.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import {ScrollSpyModule} from 'ngx-scrollspy';
 
 describe('MainComponent', () => {
     let component: MainComponent;
@@ -24,10 +33,21 @@ describe('MainComponent', () => {
                 WhyComponent,
                 WhatComponent,
                 QuotesComponent,
+                QuoteComponent,
                 HowComponent,
                 WhoComponent,
                 LetsTalkComponent,
-                FooterComponent
+                FooterComponent,
+                MemberComponent
+            ],
+            imports: [
+                ScrollSpyModule.forRoot(),
+                ScrollSpyAffixModule,
+                ScrollSpyParallaxModule,
+                CollapseModule.forRoot(),
+                Ng2PageScrollModule.forRoot(),
+                TranslateModule.forRoot(),
+                ReactiveFormsModule
             ]
         }).compileComponents();
     }));

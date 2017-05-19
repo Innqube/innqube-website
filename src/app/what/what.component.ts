@@ -1,4 +1,4 @@
-import {Component, ElementRef, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ScrollSpyParallaxOptions} from 'ngx-scrollspy/dist/plugin/parallax.directive';
 
 @Component({
@@ -12,7 +12,7 @@ export class WhatComponent implements OnInit {
         ratio: -.4
     };
 
-    constructor(private elementRef: ElementRef) {
+    constructor() {
     }
 
     ngOnInit() {

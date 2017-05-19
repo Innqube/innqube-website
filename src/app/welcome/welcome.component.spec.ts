@@ -2,6 +2,8 @@ import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {WelcomeComponent} from './welcome.component';
 import {ScrollSpyParallaxModule} from 'ngx-scrollspy/dist/plugin/parallax';
+import {TranslateModule} from 'ng2-translate';
+import {ScrollSpyModule} from 'ngx-scrollspy';
 
 describe('WelcomeComponent', () => {
     let component: WelcomeComponent;
@@ -11,7 +13,9 @@ describe('WelcomeComponent', () => {
         TestBed.configureTestingModule({
             declarations: [WelcomeComponent],
             imports: [
-                ScrollSpyParallaxModule
+                ScrollSpyModule.forRoot(),
+                ScrollSpyParallaxModule,
+                TranslateModule.forRoot()
             ]
         }).compileComponents();
     }));

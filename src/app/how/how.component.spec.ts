@@ -2,6 +2,8 @@ import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {HowComponent} from './how.component';
 import {ScrollSpyParallaxModule} from 'ngx-scrollspy/dist/plugin/parallax';
+import {TranslateModule} from 'ng2-translate';
+import {ScrollSpyModule} from 'ngx-scrollspy';
 
 describe('HowComponent', () => {
     let component: HowComponent;
@@ -11,8 +13,11 @@ describe('HowComponent', () => {
         TestBed.configureTestingModule({
             declarations: [HowComponent],
             imports: [
-                ScrollSpyParallaxModule
-            ]
+                ScrollSpyModule.forRoot(),
+                ScrollSpyParallaxModule,
+                TranslateModule.forRoot()
+            ],
+            providers: []
         }).compileComponents();
     }));
 
