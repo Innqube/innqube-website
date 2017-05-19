@@ -33,4 +33,19 @@ describe('HeaderComponent', () => {
     it('should create', () => {
         expect(component).toBeTruthy();
     });
+
+    it('should set spanish language when spanish flag is clicked', () => {
+        spyOn(component, 'changeLanguage');
+        const buttons = fixture.nativeElement.querySelectorAll('button');
+        buttons[2].click();
+        expect(component.changeLanguage).toHaveBeenCalledWith('es');
+    });
+
+    it('should set english language when uk flag is clicked', () => {
+        spyOn(component, 'changeLanguage');
+        const buttons = fixture.nativeElement.querySelectorAll('button');
+        buttons[1].click();
+        expect(component.changeLanguage).toHaveBeenCalledWith('en');
+    });
+
 });

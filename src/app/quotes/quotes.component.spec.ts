@@ -41,4 +41,10 @@ describe('QuotesComponent', () => {
         expect(component.currentQuote.quote).toBe('2');
     });
 
+    it('should get to previous index after first quote', () => {
+        component.previous();
+        component.previous();
+        expect(component.currentQuote.quote).toBe('1');
+    });
+
 });
