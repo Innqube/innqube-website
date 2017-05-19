@@ -19,10 +19,26 @@ describe('QuotesComponent', () => {
     beforeEach(() => {
         fixture = TestBed.createComponent(QuotesComponent);
         component = fixture.componentInstance;
+        component.quotes = [
+            {quote: '1', author: ''},
+            {quote: '2', author: ''}
+        ];
         fixture.detectChanges();
     });
 
     it('should create', () => {
         expect(component).toBeTruthy();
     });
+
+    it('should restart index after last quote', () => {
+        component.next();
+        component.next();
+        expect(component.currentQuote.quote).toBe('1');
+    });
+
+    it('should get to last index after first quote', () => {
+        component.previous();
+        expect(component.currentQuote.quote).toBe('2');
+    });
+
 });

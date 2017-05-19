@@ -11,7 +11,7 @@ import {Subscription} from 'rxjs/Subscription';
 export class QuotesComponent implements OnInit {
 
     currentQuoteIndex = 0;
-    private quotes = [
+    quotes = [
         {
             quote: 'La clave para ganar la carrera no es competir contra las máquinas, sino competir con máquinas.',
             author: 'Andrew McAfee'
@@ -32,7 +32,7 @@ export class QuotesComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.timerSubscription = Observable.timer(3000, 6000).subscribe(() => this.switchToNext());
+        this.timerSubscription = Observable.timer(0, 6000).subscribe(() => this.switchToNext());
     }
 
     next() {
@@ -41,7 +41,7 @@ export class QuotesComponent implements OnInit {
     }
 
     private switchToNext() {
-        if (this.currentQuoteIndex === 2) {
+        if (this.currentQuoteIndex === this.quotes.length - 1) {
             this.currentQuoteIndex = 0;
         } else {
             this.currentQuoteIndex++;
@@ -51,7 +51,7 @@ export class QuotesComponent implements OnInit {
 
     previous() {
         if (this.currentQuoteIndex === 0) {
-            this.currentQuoteIndex = 2;
+            this.currentQuoteIndex = this.quotes.length - 1;
         } else {
             this.currentQuoteIndex--;
         }
