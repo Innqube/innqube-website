@@ -1,3 +1,9 @@
+body {
+    color: #5d5454;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7em;
+}
+
 .section-container {
     padding: 20px 40px 40px;
     position: relative;

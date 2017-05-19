@@ -1,5 +1,6 @@
 .navbar {
     border-radius: 0;
+    padding: 15px 70px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -24,12 +25,45 @@
 
 .navbar a:hover {
     color: #000;
+    border-radius: 5px;
 }
 
 .navbar.affix a {
-    color: #000;
+    color: #5d5454;
 }
 
 .navbar.affix a:hover {
+    background: #5d5454;
+    border-radius: 5px;
     color: #fff;
+}
+
+.nav {
+    padding-top: 8px;
+}
+
+.navbar-toggle {
+    margin-top: 16px;
+}
+
+.navbar-toggle.collapsed {
+    background: #5d5454;
+}
+
+.navbar-toggle .icon-bar {
+    background: #fff;
+}
+
+.navbar .collapse.navbar-collapse.in.show {
+    background: rgba(0,0,0,0.95);
+}
+
+@media (min-width: 768px) {
+    .navbar .collapse.navbar-collapse.in.show {
+        background: inherit;
+    }
+}
+
+.navbar.affix .collapse.navbar-collapse.in.show {
+    background: inherit;
 }
