@@ -23,3 +23,11 @@ label {
     border: none;
     box-shadow: none;
 }
+
+.contact-title {
+    font-weight: bold;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
