@@ -1,25 +1,28 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {HowComponent} from './how.component';
+import {ScrollSpyParallaxModule} from 'ngx-scrollspy/dist/plugin/parallax';
 
 describe('HowComponent', () => {
-  let component: HowComponent;
-  let fixture: ComponentFixture<HowComponent>;
+    let component: HowComponent;
+    let fixture: ComponentFixture<HowComponent>;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ HowComponent ]
-    })
-    .compileComponents();
-  }));
+    beforeEach(async(() => {
+        TestBed.configureTestingModule({
+            declarations: [HowComponent],
+            imports: [
+                ScrollSpyParallaxModule
+            ]
+        }).compileComponents();
+    }));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(HowComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    beforeEach(() => {
+        fixture = TestBed.createComponent(HowComponent);
+        component = fixture.componentInstance;
+        fixture.detectChanges();
+    });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+    it('should create', () => {
+        expect(component).toBeTruthy();
+    });
 });
