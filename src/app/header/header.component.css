@@ -10,6 +10,11 @@
 .navbar.navbar-transparent {
     background: transparent;
     color: #fff;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
 }
 
 .navbar.navbar-transparent.affix {
@@ -19,6 +24,11 @@
     color: #000;
     width: 100%;
     z-index: 3;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
 }
 
 .navbar a {
