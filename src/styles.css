@@ -22,7 +22,7 @@ body {
 
 .light {
     background: #fff;
-    color: #000;
+    color: #312b2b;
 }
 
 .orange {
@@ -103,6 +103,12 @@ p {
 
 .btn-orange {
     background-color: #f57e37;
+    color: #fff;
+}
+
+.btn-orange:hover {
+    background-color: #ff8439;
+    color: #fff;
 }
 
 .btn-text-lg {
@@ -111,4 +117,28 @@ p {
 
 a:hover {
     text-decoration: none;
+}
+
+.titulo-seccion {
+    position: relative;
+}
+
+.titulo-seccion span {
+    background: #fff;
+    z-index: 2;
+    position: relative;
+    padding-right: 70px;
+}
+
+.titulo-seccion::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 80%;
+    background: #d8d4ca;
+    height: 1px;
+    margin-top: 4px;
 }

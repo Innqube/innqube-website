@@ -1,4 +1,7 @@
 import {Component, OnInit} from '@angular/core';
+import {Observable} from 'rxjs/Observable';
+import 'rxjs/add/observable/timer';
+import {Subscription} from 'rxjs/Subscription';
 
 @Component({
     selector: 'app-quotes',
@@ -23,14 +26,21 @@ export class QuotesComponent implements OnInit {
         }
     ];
     currentQuote = this.quotes[0];
+    timerSubscription: Subscription;
 
     constructor() {
     }
 
     ngOnInit() {
+        this.timerSubscription = Observable.timer(3000, 6000).subscribe(() => this.switchToNext());
     }
 
     next() {
+        this.timerSubscription.unsubscribe();
+        this.switchToNext();
+    }
+
+    private switchToNext() {
         if (this.currentQuoteIndex === 2) {
             this.currentQuoteIndex = 0;
         } else {

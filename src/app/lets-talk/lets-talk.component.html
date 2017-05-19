@@ -1,57 +1,64 @@
 <div class="section-container light">
-    <div class="row">
-        <div class="col-sm-6">
-            <h3>Innqube</h3>
-            <div class="row">
-                <div class="col-sm-12">
-                    <p>
-                        {{'LAST_MESSAGE' | translate}}
-                    </p>
-                    <p>
-                        {{'HOW_TO_GET_IN_TOUCH' | translate}}
-                    </p>
-                    <a href="mailto:hola@innqube.com"></a>
-                    <a href="https://telegram.me/TommyBrc"></a>
-                    <span>{{'PHONE_NUMBER' | translate}}: +54 9 294 466 3875</span>
-                    <div>
-                        <a href="mailto:hola@innqube.com">
-                            <img src="../../assets/images/mail.png"/>
-                        </a>
-                        <a href="https://api.whatsapp.com/send?phone=5492944663875">
-                            <img src="../../assets/images/whatsapp.png"/>
-                        </a>
-                        <a href="https://telegram.me/TommyBrc">
-                            <img src="../../assets/images/telegram.png"/>
-                        </a>
-                        <a href="https://twitter.com/innqube_la">
-                            <img src="../../assets/images/twitter.png"/>
-                        </a>
-                        <a href="https://www.facebook.com/innqube">
-                            <img src="../../assets/images/facebook.png"/>
-                        </a>
+    <div class="section">
+        <h3 class="titulo-seccion">
+            <span>{{'LETS_TALK' | translate}}</span>
+        </h3>
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>Innqube</h4>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>
+                            {{'LAST_MESSAGE' | translate}}
+                        </p>
+                        <p>
+                            {{'HOW_TO_GET_IN_TOUCH' | translate}}
+                        </p>
+                        <p>{{'PHONE_NUMBER' | translate}}: +54 9 294 466 3875</p>
+                        <div>
+                            <a href="tel:+5492944663875" title="Phone" target="_blank">
+                                <img src="../../assets/images/phone.png">
+                            </a>
+                            <a href="mailto:hola@innqube.com" title="Mail" target="_blank">
+                                <img src="../../assets/images/mail.png"/>
+                            </a>
+                            <a href="https://api.whatsapp.com/send?phone=5492944663875" title="Whatsapp"
+                               target="_blank">
+                                <img src="../../assets/images/whatsapp.png"/>
+                            </a>
+                            <a href="https://telegram.me/TommyBrc" title="Telegram" target="_blank">
+                                <img src="../../assets/images/telegram.png"/>
+                            </a>
+                            <a href="https://twitter.com/innqube_la" title="Twitter" target="_blank">
+                                <img src="../../assets/images/twitter.png"/>
+                            </a>
+                            <a href="https://www.facebook.com/innqube" title="Facebook" target="_blank">
+                                <img src="../../assets/images/facebook.png"/>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-6">
-            <h3>{{'SEND_US_A_MESSAGE' | translate}}</h3>
-            <form>
-                <div class="form-group">
-                    <label>{{'YOUR_NAME' | translate}}</label>
-                    <input type="text" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label>{{'YOUR_EMAIL' | translate}}</label>
-                    <input type="email" class="form-control">
-                </div>
-                <div class="form-group">
-                    <label>{{'YOUR_MESSAGE' | translate}}</label>
-                    <textarea rows="3" class="form-control"></textarea>
-                </div>
-                <button type="submit" class="btn btn-lg btn-primary">
-                    {{'SEND_MESSAGE' | translate}}
-                </button>
-            </form>
+            <div class="col-sm-6">
+                <h4>{{'SEND_US_A_MESSAGE' | translate}}</h4>
+                <form [formGroup]="form">
+                    <div class="form-group">
+                        <label>{{'YOUR_NAME' | translate}}</label>
+                        <input type="text" class="form-control" formControlName="name"/>
+                    </div>
+                    <div class="form-group">
+                        <label>{{'YOUR_EMAIL' | translate}}</label>
+                        <input type="email" class="form-control" formControlName="mail"/>
+                    </div>
+                    <div class="form-group">
+                        <label>{{'YOUR_MESSAGE' | translate}}</label>
+                        <textarea rows="3" class="form-control" formControlName="message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-orange" (click)="sendMessage()">
+                        {{'SEND_MESSAGE' | translate}}
+                    </button>
+                </form>
+            </div>
         </div>
     </div>
 </div>

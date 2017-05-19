@@ -1,6 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {Http, HttpModule} from '@angular/http';
 
 import {AppComponent} from './app.component';
@@ -63,6 +63,7 @@ export function createTranslateLoader(http: Http) {
         BsDropdownModule.forRoot(),
         CollapseModule.forRoot(),
         Ng2PageScrollModule.forRoot(),
+        ReactiveFormsModule,
         AppRoutingModule
     ],
     providers: [
