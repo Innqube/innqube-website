@@ -14,6 +14,7 @@
 
 .navbar.navbar-transparent.affix {
     background: #fff;
+    border-bottom: 1px solid #5d5454;
     color: #000;
     width: 100%;
     z-index: 3;
