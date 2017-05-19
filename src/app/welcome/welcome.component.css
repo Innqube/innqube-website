@@ -1,11 +1,17 @@
 .jumbotron {
     background: transparent;
+    margin-top: 80px;
 }
 
 .title {
     font-family: "Roboto Slab";
     font-weight: 300;
     padding: 40px 0;
+}
+
+a {
+    color: #fff;
+    margin: 80px 0 20px;
 }
 
 p {

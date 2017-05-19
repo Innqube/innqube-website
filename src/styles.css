@@ -5,8 +5,7 @@ body {
 }
 
 .section-container {
-    /*padding: 20px 40px 40px;*/
-    padding: 90px;
+    padding: 75px 90px;
     position: relative;
     z-index: 2;
 }
@@ -77,4 +76,20 @@ h3 {
 
 .section h3 {
     padding: 0 0 80px;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+.btn-xl {
+    padding: 20px 60px;
+}
+
+.btn-orange {
+    background-color: #f57e37;
+}
+
+.btn-text-lg {
+    font-size: 20px;
 }
