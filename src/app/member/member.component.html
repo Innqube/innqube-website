@@ -2,3 +2,12 @@
 <h4>{{name}}</h4>
 <h6>{{degree}}</h6>
 <hr/>
+<a *ngIf="linkedIn" [href]="linkedIn">
+    <img class="social" src="../../assets/images/linkedin.png">
+</a>
+<a *ngIf="twitter" [href]="twitter">
+    <img class="social" src="../../assets/images/twitter.png">
+</a>
+<a *ngIf="github" [href]="github">
+    <img class="social" src="../../assets/images/github.png">
+</a>
