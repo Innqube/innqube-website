@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, ElementRef, OnInit} from '@angular/core';
 
 @Component({
     selector: 'app-what',
@@ -8,14 +8,15 @@ import {Component, OnInit} from '@angular/core';
 export class WhatComponent implements OnInit {
 
     options = {
-        ratio: -.3,
-        initValue: -800
+        ratio: -.4,
+        initValue: -350
     };
 
-    constructor() {
+    constructor(private elementRef: ElementRef) {
     }
 
     ngOnInit() {
+        this.options.initValue = this.elementRef.nativeElement.offsetTop;
     }
 
 }

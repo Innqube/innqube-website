@@ -1,5 +1,19 @@
+body {
+    color: #5d5454;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7em;
+}
+
 .section-container {
-    padding: 20px 40px 40px;
+    /*padding: 20px 40px 40px;*/
+    padding: 90px;
+    position: relative;
+    z-index: 2;
+}
+
+.section {
+    position: relative;
+    z-index: 2;
 }
 
 .dark {
@@ -42,4 +56,25 @@ img.brand-light {
 
 .welcome .parallax-background {
     background-image: url("./assets/images/devices.jpg");
+}
+
+.what .parallax-background {
+    background-image: url("./assets/images/code.jpg");
+}
+
+.how .parallax-background {
+    background-image: url("./assets/images/merrel.jpg");
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto Slab";
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+.section h3 {
+    padding: 0 0 80px;
 }
