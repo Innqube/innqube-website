@@ -5,7 +5,8 @@ body {
 }
 
 .section-container {
-    padding: 20px 40px 40px;
+    /*padding: 20px 40px 40px;*/
+    padding: 90px;
     position: relative;
     z-index: 2;
 }
