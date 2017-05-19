@@ -10,10 +10,14 @@ export class HeaderComponent implements OnInit {
 
     collapsed = false;
 
-    constructor() {
+    constructor(private translate: TranslateService) {
     }
 
     ngOnInit() {
+    }
+
+    changeLanguage(lang: string) {
+        this.translate.use(lang);
     }
 
 }

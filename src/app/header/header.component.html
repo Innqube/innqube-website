@@ -35,8 +35,14 @@
                     <a pageScroll [pageScrollDuration]="500" [pageScrollOffset]="70" href="#letsTalk">{{'LETS_TALK' | translate}}</a>
                 </li>
                 <li>
-                    <button (click)="translateService.setDefaultLang('en')">English</button>
-                    <button (click)="translateService.setDefaultLang('es')">Spanish</button>
+                    <div class="btn-group">
+                        <button class="btn btn-xs" (click)="changeLanguage('en')" title="English">
+                            <img src="../../assets/images/uk.png"/>
+                        </button>
+                        <button class="btn btn-xs" (click)="changeLanguage('es')" title="Español">
+                            <img src="../../assets/images/spain.png"/>
+                        </button>
+                    </div>
                 </li>
             </ul>
         </div>

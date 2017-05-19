@@ -68,3 +68,12 @@
 .navbar.affix .collapse.navbar-collapse.in.show {
     background: inherit;
 }
+
+.btn-group {
+    padding: 10px 0;
+    margin-left: 30px;
+}
+
+.btn-group .btn {
+    background: rgba(0,0,0,0.1);
+}
