@@ -1,5 +1,12 @@
 .section-container {
     padding: 20px 40px 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.section {
+    position: relative;
+    z-index: 2;
 }
 
 .dark {
