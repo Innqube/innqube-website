@@ -108,3 +108,7 @@ p {
 .btn-text-lg {
     font-size: 20px;
 }
+
+a:hover {
+    text-decoration: none;
+}
