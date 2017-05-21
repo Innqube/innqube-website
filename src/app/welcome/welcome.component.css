@@ -4,9 +4,15 @@
 }
 
 .title {
-    font-family: "Roboto Slab";
-    font-weight: 300;
-    padding: 40px 0;
+    padding: 0px 0 20px;
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-family: "Roboto Slab";
+        font-weight: 300;
+        padding: 40px 0;
+    }
 }
 
 a {
