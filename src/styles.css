@@ -19,6 +19,14 @@ body {
     .section-container {
         padding: 75px 90px;
     }
+
+    img.brand-dark {
+        display: none;
+    }
+
+    .affix img.brand-light {
+        display: none;
+    }
 }
 
 .dark {

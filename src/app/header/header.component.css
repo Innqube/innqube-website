@@ -29,7 +29,7 @@
 
 .navbar {
     margin-bottom: 0;
-    position: relative;
+    position: absolute;
     width: 100%;
     z-index: 3;
 }
@@ -49,10 +49,11 @@
 .navbar .collapse.navbar-collapse.in.show {
     background: #000;
     background: rgba(0,0,0,0.95);
+    transition: all .5s;
 }
 
 .navbar img {
-    max-width: 175px;
+    max-width: 200px;
 }
 
 .navbar-header {
