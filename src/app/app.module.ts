@@ -6,7 +6,6 @@ import {Http, HttpModule} from '@angular/http';
 import {AppComponent} from './app.component';
 import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
-import {TranslateLoader, TranslateModule, TranslateService, TranslateStaticLoader} from 'ng2-translate';
 import {WelcomeComponent} from './welcome/welcome.component';
 import {WhyComponent} from './why/why.component';
 import {WhatComponent} from './what/what.component';
@@ -24,9 +23,11 @@ import {AppRoutingModule} from './app-routing.module';
 import {MainComponent} from './main/main.component';
 import {Ng2PageScrollModule} from 'ng2-page-scroll';
 import {QuoteComponent} from './quote/quote.component';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
 export function createTranslateLoader(http: Http) {
-    return new TranslateStaticLoader(http, '/assets/i18n', '.json');
+    return new TranslateHttpLoader(http, '/assets/i18n/', '.json');
 }
 
 @NgModule({
@@ -51,9 +52,11 @@ export function createTranslateLoader(http: Http) {
         FormsModule,
         HttpModule,
         TranslateModule.forRoot({
-            provide: TranslateLoader,
-            useFactory: createTranslateLoader,
-            deps: [Http]
+            loader: {
+                provide: TranslateLoader,
+                useFactory: createTranslateLoader,
+                deps: [Http]
+            }
         }),
         ScrollSpyModule.forRoot(),
         ScrollSpyParallaxModule,
@@ -63,9 +66,6 @@ export function createTranslateLoader(http: Http) {
         Ng2PageScrollModule.forRoot(),
         ReactiveFormsModule,
         AppRoutingModule
-    ],
-    providers: [
-        TranslateService
     ],
     bootstrap: [AppComponent]
 })

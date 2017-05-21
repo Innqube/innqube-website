@@ -48,4 +48,14 @@ describe('HeaderComponent', () => {
         expect(component.changeLanguage).toHaveBeenCalledWith('en');
     });
 
+    fit('should change labels when changing language', async(() => {
+        const buttons = fixture.nativeElement.querySelectorAll('button');
+        buttons[1].click();
+        const anchors = fixture.nativeElement.querySelectorAll('a');
+        console.log(anchors);
+        expect(anchors[0].innerHTML).toBe('Start');
+        buttons[2].click();
+        expect(anchors[0].innerHTML).toBe('Inicio');
+    }));
+
 });
