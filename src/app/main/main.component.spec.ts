@@ -13,12 +13,13 @@ import {FooterComponent} from '../footer/footer.component';
 import {ScrollSpyAffixModule} from 'ngx-scrollspy/dist/plugin/affix';
 import {CollapseModule} from 'ngx-bootstrap';
 import {Ng2PageScrollModule} from 'ng2-page-scroll';
-import {TranslateModule} from 'ng2-translate';
 import {ScrollSpyParallaxModule} from 'ngx-scrollspy/dist/plugin/parallax';
 import {QuoteComponent} from '../quote/quote.component';
 import {MemberComponent} from '../member/member.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {ScrollSpyModule} from 'ngx-scrollspy';
+import {TranslateModule} from '@ngx-translate/core';
+import {HttpModule} from '@angular/http';
 
 describe('MainComponent', () => {
     let component: MainComponent;
@@ -47,7 +48,8 @@ describe('MainComponent', () => {
                 CollapseModule.forRoot(),
                 Ng2PageScrollModule.forRoot(),
                 TranslateModule.forRoot(),
-                ReactiveFormsModule
+                ReactiveFormsModule,
+                HttpModule
             ]
         }).compileComponents();
     }));

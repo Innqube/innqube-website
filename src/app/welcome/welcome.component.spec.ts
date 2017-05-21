@@ -2,8 +2,8 @@ import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {WelcomeComponent} from './welcome.component';
 import {ScrollSpyParallaxModule} from 'ngx-scrollspy/dist/plugin/parallax';
-import {TranslateModule} from 'ng2-translate';
 import {ScrollSpyModule} from 'ngx-scrollspy';
+import {TranslateModule} from '@ngx-translate/core';
 
 describe('WelcomeComponent', () => {
     let component: WelcomeComponent;

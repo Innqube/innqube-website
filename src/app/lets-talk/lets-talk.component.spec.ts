@@ -1,10 +1,10 @@
 import {async, ComponentFixture, fakeAsync, inject, TestBed} from '@angular/core/testing';
 
 import {LetsTalkComponent} from './lets-talk';
-import {TranslateModule} from 'ng2-translate';
 import {FormBuilder, ReactiveFormsModule} from '@angular/forms';
 import {BaseRequestOptions, Http, RequestMethod} from '@angular/http';
 import {MockBackend} from '@angular/http/testing';
+import {TranslateModule} from '@ngx-translate/core';
 
 describe('LetsTalkComponent', () => {
     let component: LetsTalkComponent;

@@ -4,8 +4,10 @@ import {HeaderComponent} from './header.component';
 import {ScrollSpyAffixModule} from 'ngx-scrollspy/dist/plugin/affix';
 import {CollapseModule} from 'ngx-bootstrap';
 import {Ng2PageScrollModule} from 'ng2-page-scroll';
-import {TranslateModule} from 'ng2-translate';
 import {ScrollSpyModule} from 'ngx-scrollspy';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {Http, HttpModule} from '@angular/http';
 
 describe('HeaderComponent', () => {
     let component: HeaderComponent;
@@ -19,7 +21,14 @@ describe('HeaderComponent', () => {
                 ScrollSpyModule.forRoot(),
                 CollapseModule.forRoot(),
                 Ng2PageScrollModule.forRoot(),
-                TranslateModule.forRoot()
+                TranslateModule.forRoot({
+                    loader: {
+                        provide: TranslateLoader,
+                        useFactory: http => new TranslateHttpLoader(http, '/assets/i18n/', '.json'),
+                        deps: [Http]
+                    }
+                }),
+                HttpModule
             ]
         }).compileComponents();
     }));
@@ -47,15 +56,5 @@ describe('HeaderComponent', () => {
         buttons[1].click();
         expect(component.changeLanguage).toHaveBeenCalledWith('en');
     });
-
-    fit('should change labels when changing language', async(() => {
-        const buttons = fixture.nativeElement.querySelectorAll('button');
-        buttons[1].click();
-        const anchors = fixture.nativeElement.querySelectorAll('a');
-        console.log(anchors);
-        expect(anchors[0].innerHTML).toBe('Start');
-        buttons[2].click();
-        expect(anchors[0].innerHTML).toBe('Inicio');
-    }));
 
 });

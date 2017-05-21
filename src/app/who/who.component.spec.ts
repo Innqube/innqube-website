@@ -1,8 +1,8 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {WhoComponent} from './who.component';
-import {TranslateModule} from 'ng2-translate';
 import {MemberComponent} from '../member/member.component';
+import {TranslateModule} from '@ngx-translate/core';
 
 describe('WhoComponent', () => {
     let component: WhoComponent;
