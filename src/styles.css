@@ -45,7 +45,7 @@ body {
 }
 
 .affix img.brand-dark {
-    display: block;
+    display: inline-block;
 }
 
 img.brand-dark {

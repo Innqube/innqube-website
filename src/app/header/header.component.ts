@@ -8,7 +8,7 @@ import {TranslateService} from 'ng2-translate';
 })
 export class HeaderComponent implements OnInit {
 
-    collapsed = false;
+    collapsed = true;
 
     constructor(private translate: TranslateService) {
     }

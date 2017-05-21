@@ -40,6 +40,7 @@
 
 .navbar-toggle.collapsed {
     background: #5d5454;
+    background: rgba(50,50,50,0.75);
 }
 
 .navbar-toggle .icon-bar {
@@ -81,6 +82,7 @@
     background: rgba(255,255,255,0.98);
     border-bottom: 1px solid #5d5454;
     color: #000;
+    position: fixed;
     width: 100%;
     z-index: 3;
     -webkit-transition: all .5s;
