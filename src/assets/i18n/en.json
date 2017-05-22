@@ -31,8 +31,16 @@
   "WORKSHOPS": "Workshops",
   "ACCOMPANIMENT": "Accompaniment",
 
+  "QUOTE1": "La clave para ganar la carrera no es competir contra las máquinas, sino competir con máquinas.",
+  "QUOTE1AUTH": "Andrew McAfee",
+  "QUOTE2": "Hay un uber para cada industria, cada producto y cada servicio. Viene una revolución de innovación…",
+  "QUOTE2AUTH": "Mike Beedle",
+  "QUOTE3": "No tener problemas es el problema más grande.",
+  "QUOTE3AUTH": "Taiichi Ohno",
+
   "HOW_WE_WORK": "How we work?",
   "HOW_WE_WORK_EXPLANATION": "We believe <strong>true innovation</strong> is given by working <strong>together</strong> with people, creating <strong>solutions for people</strong>. This builds a reality where digital technology benefits all. We call it <strong>“People-Based Innovation“</strong>:",
+  "HOW_WE_WORK_IMAGE": "../../assets/images/hci.png",
 
   "WHO_WE_ARE": "Who we are?",
   "SYSTEMS_DEGREE": "Systems Degree",
