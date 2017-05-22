@@ -11,28 +11,8 @@ import {TranslateService} from '@ngx-translate/core';
 })
 export class QuotesComponent implements OnInit {
 
-    doTranslation(key: string): string {
-      var keyVal: string;
-      this.translate.get(key).subscribe(res => keyVal = res[key]);
-//      keyVal = this.translate.get(key).toLocaleString();
-      return keyVal;
-    }
-
     currentQuoteIndex = 0;
-    quotes = [
-        {
-            quote: this.doTranslation('QUOTE1'),
-            author: this.doTranslation('QUOTE1AUTH')
-        },
-        {
-            quote: this.doTranslation('QUOTE2'),
-            author: this.doTranslation('QUOTE2AUTH')
-        },
-        {
-            quote: this.doTranslation('QUOTE3'),
-            author: this.doTranslation('QUOTE3AUTH')
-        }
-    ];
+    quotes = [];
     currentQuote = this.quotes[0];
     timerSubscription: Subscription;
 
@@ -41,6 +21,30 @@ export class QuotesComponent implements OnInit {
 
     ngOnInit() {
         this.timerSubscription = Observable.timer(0, 6000).subscribe(() => this.switchToNext());
+        this.translate.onLangChange.subscribe(() => this.loadQuotes());
+        this.loadQuotes();
+    }
+
+    loadQuotes() {
+        this.translate
+            .get(['QUOTE1', 'QUOTE2', 'QUOTE3', 'QUOTE1AUTH', 'QUOTE2AUTH', 'QUOTE3AUTH'])
+            .subscribe(translated => {
+                this.quotes = [
+                    {
+                        quote: translated['QUOTE1'],
+                        author: translated['QUOTE1AUTH']
+                    },
+                    {
+                        quote: translated['QUOTE2'],
+                        author: translated['QUOTE2AUTH']
+                    },
+                    {
+                        quote: translated['QUOTE3'],
+                        author: translated['QUOTE3AUTH']
+                    }
+                ];
+                this.currentQuote = this.quotes[0];
+            });
     }
 
     next() {

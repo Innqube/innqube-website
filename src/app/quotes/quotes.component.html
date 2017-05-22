@@ -1,6 +1,6 @@
 <div class="section-container orange">
     <div class="jumbotron">
-        <app-quote [quote]="currentQuote.quote" [author]="currentQuote.author"></app-quote>
+        <app-quote *ngIf="currentQuote" [quote]="currentQuote.quote" [author]="currentQuote.author"></app-quote>
         <p></p>
         <div class="btn-group">
             <button class="btn btn-darker" type="button" (click)="previous()">
