@@ -1,5 +1,9 @@
 dist: trusty
 sudo: required
+addons:
+  apt:
+    packages:
+    - lftp
 language: node_js
 node_js:
   - "6"
@@ -19,4 +23,6 @@ script:
   - npm run build-prod
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+  - lftp -c 'open -u $FTP_USER,$FTP_PASSWORD 200.80.43.110; rm -r assets'
+  - lftp -c 'open -u ci@innqube.com,innqube2016 200.80.43.110; glob -a rm -r *'
   - cd dist && find . -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://200.80.43.110/{} \;
