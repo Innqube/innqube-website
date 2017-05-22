@@ -27,4 +27,4 @@ after_success:
   - echo 'set ssl:verify-certificate no' > ~/.lftp/rc
   - lftp -c "open -u $FTP_USER,$FTP_PASSWORD $FTP_SERVER; rm -r assets"
   - lftp -c "open -u $FTP_USER,$FTP_PASSWORD $FTP_SERVER; glob -a rm -r *"
-#  - cd dist && find . -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://$FTP_SERVER/{} \;
+  - cd dist && find . -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://$FTP_SERVER/{} \;
