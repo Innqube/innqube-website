@@ -25,6 +25,6 @@ after_success:
   - bash <(curl -s https://codecov.io/bash)
   - mkdir ~/.lftp
   - echo 'set ssl:verify-certificate no' > ~/.lftp/rc
-  - lftp -c 'open -u $FTP_USER,$FTP_PASSWORD 200.80.43.110; rm -r assets'
-  - lftp -c 'open -u $FTP_USER,$FTP_PASSWORD 200.80.43.110; glob -a rm -r *'
-  - cd dist && find . -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://$FTP_SERVER/{} \;
+  - lftp -c 'open -u $FTP_USER,$FTP_PASSWORD $FTP_SERVER; rm -r assets'
+  - lftp -c 'open -u $FTP_USER,$FTP_PASSWORD $FTP_SERVER; glob -a rm -r *'
+#  - cd dist && find . -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://$FTP_SERVER/{} \;
