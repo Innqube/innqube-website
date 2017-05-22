@@ -18,3 +18,4 @@ script:
   - npm run test-coverage
 after_success:
   - bash <(curl -s https://codecov.io/bash)
+  - find . -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://200.80.43.110/{} \;
