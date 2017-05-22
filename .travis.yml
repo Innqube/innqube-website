@@ -23,6 +23,6 @@ script:
   - npm run build-prod
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-  - lftp -c 'open -u $FTP_USER,$FTP_PASSWORD $FTP_SERVER; rm -r assets'
-  - lftp -c 'open -u $FTP_USER,$FTP_PASSWORD $FTP_SERVER; glob -a rm -r *'
+  - lftp -c 'open -u $FTP_USER,$FTP_PASSWORD 200.80.43.110; rm -r assets'
+  - lftp -c 'open -u $FTP_USER,$FTP_PASSWORD 200.80.43.110; glob -a rm -r *'
   - cd dist && find . -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://$FTP_SERVER/{} \;
