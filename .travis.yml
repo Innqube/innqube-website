@@ -16,6 +16,7 @@ install:
   - npm install
 script:
   - npm run test-coverage
+  - npm run build-prod
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-  - find . -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://200.80.43.110/{} \;
+  - cd dist && find . -type f -exec curl --ftp-create-dirs -T {} -u $FTP_USER:$FTP_PASSWORD ftp://200.80.43.110/{} \;
