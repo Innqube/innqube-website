@@ -12,8 +12,9 @@ import {TranslateService} from '@ngx-translate/core';
 export class QuotesComponent implements OnInit {
 
     doTranslation(key: string): string {
-      keyVal: string;
-      this.translate.get(key).subscribe(res);
+      var keyVal: string;
+      this.translate.get(key).subscribe(res => keyVal = res[key]);
+//      keyVal = this.translate.get(key).toLocaleString();
       return keyVal;
     }
 
