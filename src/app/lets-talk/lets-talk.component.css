@@ -6,6 +6,11 @@ a:hover {
     color: #f57e37;
 }
 
+a.btn-orange,
+a.btn-orange:hover {
+    color: #fff;
+}
+
 i {
     font-size: 40px;
 }
