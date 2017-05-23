@@ -95,15 +95,7 @@
     transition: all .5s;
 }
 
-p {
-    font-weight: 100;
-    padding: 40px 0 20px;
-}
-
 @media (min-width: 768px) {
-    p {
-        font-size: 22.5px;
-    }
     .navbar .collapse.navbar-collapse.in.show {
         background: inherit;
     }
