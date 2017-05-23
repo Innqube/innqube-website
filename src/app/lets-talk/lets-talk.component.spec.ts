@@ -1,8 +1,8 @@
-import {async, ComponentFixture, fakeAsync, inject, TestBed} from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {LetsTalkComponent} from './lets-talk';
-import {FormBuilder, ReactiveFormsModule} from '@angular/forms';
-import {BaseRequestOptions, Http, RequestMethod} from '@angular/http';
+import {ReactiveFormsModule} from '@angular/forms';
+import {BaseRequestOptions, Http} from '@angular/http';
 import {MockBackend} from '@angular/http/testing';
 import {TranslateModule} from '@ngx-translate/core';
 
@@ -40,14 +40,4 @@ describe('LetsTalkComponent', () => {
         expect(component).toBeTruthy();
     });
 
-    it('should send post request', inject([FormBuilder, MockBackend], fakeAsync((formBuilder: FormBuilder, backend: MockBackend) => {
-        component.form.patchValue({
-            name: 'name',
-            mail: 'mail@mail.com',
-            message: 'message'
-        });
-        component.sendMessage();
-        expect(backend.connectionsArray[0].request.url).toBe('http://www.innqube.com/team/tomas-christie/');
-        expect(backend.connectionsArray[0].request.method).toBe(RequestMethod.Post);
-    })));
 });
