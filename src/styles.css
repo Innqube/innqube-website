@@ -15,15 +15,17 @@ body {
     z-index: 2;
 }
 
+.parallax-background {
+    background-position-x: 50% !important;
+}
+
 @media (min-width: 768px) {
     .section-container {
         padding: 75px 90px;
     }
-
     img.brand-dark {
         display: none;
     }
-
     .affix img.brand-light {
         display: none;
     }
@@ -82,7 +84,12 @@ img.brand-dark {
     opacity: 0.3;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Roboto Slab";
     font-weight: 300;
 }
