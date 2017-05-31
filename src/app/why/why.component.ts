@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {ScrollSpyParallaxOptions} from 'ngx-scrollspy/dist/plugin/parallax.directive';
 
 @Component({
     selector: 'app-why',
@@ -7,7 +8,11 @@ import {Component, OnInit} from '@angular/core';
 })
 export class WhyComponent implements OnInit {
 
-    constructor() {
+  options: ScrollSpyParallaxOptions = {
+    ratio: -.4
+  };
+
+  constructor() {
     }
 
     ngOnInit() {
