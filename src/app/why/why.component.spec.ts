@@ -2,6 +2,8 @@ import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {WhyComponent} from './why.component';
 import {TranslateModule} from '@ngx-translate/core';
+import {ScrollSpyParallaxModule} from 'ngx-scrollspy/dist/plugin/parallax';
+import {ScrollSpyModule} from 'ngx-scrollspy';
 
 describe('WhyComponent', () => {
     let component: WhyComponent;
@@ -11,7 +13,9 @@ describe('WhyComponent', () => {
         TestBed.configureTestingModule({
             declarations: [WhyComponent],
             imports: [
-                TranslateModule.forRoot()
+                TranslateModule.forRoot(),
+                ScrollSpyParallaxModule,
+                ScrollSpyModule.forRoot()
             ]
         }).compileComponents();
     }));
