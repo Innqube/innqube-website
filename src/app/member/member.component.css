@@ -1,0 +1,27 @@
+img {
+    width: 100%;
+}
+
+.social {
+    width: 32px;
+}
+
+hr {
+    margin-bottom: 0;
+}
+
+a {
+    color: #f57e37;
+}
+
+a:hover {
+    color: #ff8439;
+}
+
+i {
+    font-size: 34px;
+}
+
+.member-container {
+    margin-bottom: 20px;
+}

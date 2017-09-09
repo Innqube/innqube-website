@@ -1,0 +1,188 @@
+body {
+    color: #5d5454;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7em;
+}
+
+.section-container {
+    padding: 10px 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.section {
+    position: relative;
+    z-index: 2;
+}
+
+.parallax-background {
+    background-position-x: 50% !important;
+}
+
+@media (min-width: 768px) {
+    .section-container {
+        padding: 75px 90px;
+    }
+    img.brand-dark {
+        display: none;
+    }
+    .affix img.brand-light {
+        display: none;
+    }
+}
+
+.dark {
+    background: #000;
+    color: #fff;
+}
+
+.light {
+    background: #fff;
+    color: #312b2b;
+}
+
+.grey {
+  background: #f7f7f7;
+  color: #312b2b;
+}
+
+.orange {
+    background: #f57e37;
+    color: #fff;
+}
+
+.affix img.brand-dark {
+    display: inline-block;
+}
+
+img.brand-dark {
+    display: none;
+}
+
+.affix img.brand-light {
+    display: none;
+}
+
+.parallax-background {
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.welcome .parallax-background {
+    background-image: url("./assets/images/devices.jpg");
+}
+
+.what .parallax-background {
+    background-image: url("./assets/images/code.jpg");
+    opacity: 0.3;
+}
+
+.how .parallax-background {
+    background-image: url("./assets/images/merrel.jpg");
+    opacity: 0.3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto Slab";
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+h5 {
+    font-size: 1.5em;
+}
+
+.section h3 {
+    padding: 0 0 80px;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+.btn-xl {
+    padding: 20px 60px;
+}
+
+.btn-orange {
+    background-color: #f57e37;
+    color: #fff;
+}
+
+.btn-orange:hover {
+    background-color: #ff8439;
+    color: #fff;
+}
+
+.btn-text-lg {
+    font-size: 20px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.titulo-seccion {
+    position: relative;
+}
+
+.titulo-seccion span {
+    background: #fff;
+    z-index: 2;
+    position: relative;
+    padding-right: 70px;
+}
+
+.titulo-seccion-grey span {
+  background: #f7f7f7;
+  z-index: 2;
+  position: relative;
+  padding-right: 70px;
+}
+
+.titulo-seccion::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 80%;
+    background: #d8d4ca;
+    height: 1px;
+    margin-top: 4px;
+}
+
+.img-container {
+  width: 90%;
+  height: auto;
+}
+
+.customer-row {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.separador {
+  border-top: 1px solid #d2d2d2;
+  margin-top: 30px;
+}
