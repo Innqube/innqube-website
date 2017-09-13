@@ -9,6 +9,9 @@ export class QuoteComponent implements OnInit {
 
     @Input() quote: string;
     @Input() imagen: string;
+    @Input() author: string;
+    @Input() role: string;
+    @Input() authorImg: string;
 
     constructor() {
     }

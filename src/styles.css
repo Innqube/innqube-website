@@ -141,6 +141,7 @@ a:hover {
     text-decoration: none;
 }
 
+.titulo-seccion-grey,
 .titulo-seccion {
     position: relative;
 }
@@ -159,6 +160,7 @@ a:hover {
   padding-right: 70px;
 }
 
+.titulo-seccion-grey::after,
 .titulo-seccion::after {
     content: '';
     width: 100%;
