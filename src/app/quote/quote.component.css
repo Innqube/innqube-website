@@ -10,13 +10,13 @@ h4 {
 
 .profile-pic img {
     border-radius: 100%;
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
 }
 
 .author {
     color: #222;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
 }
 
@@ -31,10 +31,10 @@ h4 {
     padding: 20px;
     font-style: italic;
     font-family: serif;
+    min-height: 200px;
 }
 
 .quote-container {
-    min-height: 350px;
     background: #eee;
     border-radius: 5px;
     padding: 20px;
@@ -46,9 +46,14 @@ h4 {
     grid-template-columns: 3fr 5fr;
 }
 
-.author div {
+.author .profile-pic {
     align-self: center;
     justify-self: center;
+}
+
+.author .author-name {
+    align-self: center;
+    justify-self: start;
 }
 
 hr {
