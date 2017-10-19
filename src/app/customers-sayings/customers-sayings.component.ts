@@ -12,22 +12,22 @@ export class CustomersSayingsComponent implements OnInit {
             quote: 'TRIVERO_MSG',
             imagen: '../../assets/images/customers/tecnica_rivero.png',
             author: 'Agustín Rivero',
-            authorImg: 'https://scontent-eze1-1.xx.fbcdn.net/v/t1.0-1/p160x160/15941326_10154984053694759_3650510600741576606_n.jpg?oh=170124ad15cbbebdd6ab5cd5e446d3bf&oe=5A141ED1',
-            role: 'Dueño'
+            authorImg: '../../assets/images/testimonios/agustin_rivero.jpg',
+            role: 'TRIVERO_ROL'
         },
         {
             quote: 'ABAROA_MSG',
             imagen: '../../assets/images/customers/abaroa.png',
             author: 'Gonzalo Abaroa',
             authorImg: '../../assets/images/testimonios/gonzalo_abaroa.jpg',
-            role: 'Dueño y Gerente comercial'
+            role: 'ABAROA_ROL'
         },
         {
             quote: 'CONICET_MSG',
             imagen: '../../assets/images/customers/conicet.png',
             author: 'Diego Libkind',
             authorImg: '../../assets/images/testimonios/diego_libkind.jpg',
-            role: 'Director del IPATEC, Investigador Independiente'
+            role: 'CONICET_ROL'
         }
     ];
 
