@@ -12,5 +12,7 @@
     .customer-cell {
         max-width: 50%;
         margin: 20px auto;
+        height: 80px;
+        text-align: center;
     }
 }

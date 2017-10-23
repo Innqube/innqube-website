@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Observable} from 'rxjs/Observable';
 
 @Component({
     selector: 'app-customers',
@@ -77,7 +78,7 @@ export class CustomersComponent implements OnInit {
 
     ngOnInit() {
         this.fillInitialCustomers();
-        /* Observable.timer(0, 3500).subscribe(() => {
+        Observable.timer(0, 3500).subscribe(() => {
             let index: number;
 
             do {
@@ -87,7 +88,7 @@ export class CustomersComponent implements OnInit {
             const newIndex = this.lastChangedIndex + 1 === this.VISIBLE_CUSTOMERS ? 0 : this.lastChangedIndex + 1;
             this.lastChangedIndex = newIndex;
             this.visibleCustomersIndexes[newIndex] = index;
-        }); */
+        });
     }
 
     private customerAlreadyVisible(index: number) {

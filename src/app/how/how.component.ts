@@ -9,7 +9,7 @@ import {ScrollSpyParallaxOptions} from 'ngx-scrollspy/dist/plugin/parallax.direc
 export class HowComponent implements OnInit {
 
     options: ScrollSpyParallaxOptions = {
-        ratio: -.4
+        ratio: -.1
     };
 
     constructor() {

@@ -8,7 +8,7 @@ import {Component, OnInit} from '@angular/core';
 export class WelcomeComponent implements OnInit {
 
     options = {
-        ratio: -.4
+        ratio: -.1
     };
 
     constructor() {

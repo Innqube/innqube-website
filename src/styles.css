@@ -65,7 +65,7 @@ img.brand-dark {
 
 .parallax-background {
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     opacity: 0.5;
     position: absolute;
     top: 0;
@@ -181,6 +181,15 @@ a:hover {
 
 .customer-row {
   margin-top: 40px;
+}
+
+@media(max-width: 767px) {
+    .customer-row {
+        margin-bottom: 40px;
+    }
+    .img-container {
+        max-width: 75%;
+    }
 }
 
 .separador {
