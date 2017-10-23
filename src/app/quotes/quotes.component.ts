@@ -27,7 +27,7 @@ export class QuotesComponent implements OnInit {
 
     loadQuotes() {
         this.translate
-            .get(['TRIVERO_MSG', 'ABAROA_MSG'])
+            .get(['TRIVERO_MSG', 'ABAROA_MSG', 'CONICET_MSG'])
             .subscribe(translated => {
                 this.quotes = [
                     {
@@ -43,6 +43,13 @@ export class QuotesComponent implements OnInit {
                         author: 'Gonzalo Abaroa',
                         authorImg: 'https://scontent-eze1-1.xx.fbcdn.net/v/t1.0-1/p160x160/19756472_10212568546664957_2303231259769670395_n.jpg?oh=e0716369b905af263335f5777d47840b&oe=5A581BE5',
                         role: 'Gerente comercial'
+                    },
+                    {
+                        quote: translated['CONICET_MSG'],
+                        imagen: '../../assets/images/testimonios/diego_libkind.jpg',
+                        author: 'Diego Libkind',
+                        authorImg: '../../assets/images/testimonios/diego_libkind.jpg',
+                        role: 'IPATEC'
                     }
                 ];
                 this.currentQuote = this.quotes[0];
