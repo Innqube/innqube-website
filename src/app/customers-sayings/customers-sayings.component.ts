@@ -9,11 +9,11 @@ export class CustomersSayingsComponent implements OnInit {
 
     quotes = [
         {
-            quote: 'TRIVERO_MSG',
-            imagen: '../../assets/images/customers/tecnica_rivero.png',
-            author: 'Agustín Rivero',
-            authorImg: '../../assets/images/testimonios/agustin_rivero.jpg',
-            role: 'TRIVERO_ROL'
+            quote: 'CONICET_MSG',
+            imagen: '../../assets/images/customers/conicet.png',
+            author: 'Diego Libkind',
+            authorImg: '../../assets/images/testimonios/diego_libkind.jpg',
+            role: 'CONICET_ROL'
         },
         {
             quote: 'ABAROA_MSG',
@@ -23,11 +23,11 @@ export class CustomersSayingsComponent implements OnInit {
             role: 'ABAROA_ROL'
         },
         {
-            quote: 'CONICET_MSG',
-            imagen: '../../assets/images/customers/conicet.png',
-            author: 'Diego Libkind',
-            authorImg: '../../assets/images/testimonios/diego_libkind.jpg',
-            role: 'CONICET_ROL'
+            quote: 'TRIVERO_MSG',
+            imagen: '../../assets/images/customers/tecnica_rivero.png',
+            author: 'Agustín Rivero',
+            authorImg: '../../assets/images/testimonios/agustin_rivero.jpg',
+            role: 'TRIVERO_ROL'
         }
     ];
 
