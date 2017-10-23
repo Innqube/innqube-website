@@ -7,3 +7,10 @@
     filter: saturate(1);
     transition: all 0.5s;
 }
+
+@media(max-width: 767px) {
+    .customer-cell {
+        max-width: 50%;
+        margin: 20px auto;
+    }
+}

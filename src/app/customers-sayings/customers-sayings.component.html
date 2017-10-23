@@ -4,28 +4,24 @@
             <span>{{'CUSTOMERS' | translate}}</span>
         </h3>
 
-        <div class="row">
-            <div class="col-sm-4">
-                <app-quote [quote]="quotes[0].quote | translate"
-                           [imagen]="quotes[0].imagen"
-                           [author]="quotes[0].author"
-                           [authorImg]="quotes[0].authorImg"
-                           [role]="quotes[0].role | translate"></app-quote>
-            </div>
-            <div class="col-sm-4">
-                <app-quote [quote]="quotes[1].quote | translate"
-                           [imagen]="quotes[1].imagen"
-                           [author]="quotes[1].author"
-                           [authorImg]="quotes[1].authorImg"
-                           [role]="quotes[1].role | translate"></app-quote>
-            </div>
-            <div class="col-sm-4">
-                <app-quote [quote]="quotes[2].quote | translate"
-                           [imagen]="quotes[2].imagen"
-                           [author]="quotes[2].author"
-                           [authorImg]="quotes[2].authorImg"
-                           [role]="quotes[2].role | translate"></app-quote>
-            </div>
+        <div class="wrapper">
+            <app-quote [quote]="quotes[0].quote | translate"
+                       [imagen]="quotes[0].imagen"
+                       [author]="quotes[0].author"
+                       [authorImg]="quotes[0].authorImg"
+                       [role]="quotes[0].role | translate"></app-quote>
+
+            <app-quote [quote]="quotes[1].quote | translate"
+                       [imagen]="quotes[1].imagen"
+                       [author]="quotes[1].author"
+                       [authorImg]="quotes[1].authorImg"
+                       [role]="quotes[1].role | translate"></app-quote>
+
+            <app-quote [quote]="quotes[2].quote | translate"
+                       [imagen]="quotes[2].imagen"
+                       [author]="quotes[2].author"
+                       [authorImg]="quotes[2].authorImg"
+                       [role]="quotes[2].role | translate"></app-quote>
         </div>
         <div class="col-md-12" class="separador"></div>
         <app-customers></app-customers>
