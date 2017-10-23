@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Observable} from 'rxjs/Observable';
+import 'rxjs/add/observable/timer';
 
 @Component({
     selector: 'app-customers',
