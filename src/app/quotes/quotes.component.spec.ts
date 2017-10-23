@@ -1,8 +1,9 @@
-import {async, ComponentFixture, inject, TestBed} from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {QuotesComponent} from './quotes.component';
 import {QuoteComponent} from '../quote/quote.component';
-import {TranslateModule, TranslateService} from '@ngx-translate/core';
+import {TranslateModule} from '@ngx-translate/core';
+import {CustomersComponent} from '../customers/customers.component';
 
 describe('QuotesComponent', () => {
     let component: QuotesComponent;
@@ -16,7 +17,8 @@ describe('QuotesComponent', () => {
         TestBed.configureTestingModule({
             declarations: [
                 QuotesComponent,
-                QuoteComponent
+                QuoteComponent,
+                CustomersComponent
             ],
             imports: [
                 TranslateModule.forRoot()
@@ -57,11 +59,5 @@ describe('QuotesComponent', () => {
     it('should load the quotes', () => {
         expect(component.quotes.length).toBeGreaterThan(0);
     });
-
-    it('should reload the quotes when language changes', inject([TranslateService], (translateService: TranslateService) => {
-        spyOn(component, 'loadQuotes');
-        translateService.onLangChange.emit();
-        expect(component.loadQuotes).toHaveBeenCalled();
-    }));
 
 });

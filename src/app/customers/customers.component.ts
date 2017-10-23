@@ -8,7 +8,7 @@ import {Observable} from 'rxjs/Observable';
 })
 export class CustomersComponent implements OnInit {
 
-    private readonly VISIBLE_CUSTOMERS = 4;
+    readonly VISIBLE_CUSTOMERS = 4;
     customers: [{
         name: string,
         link: string,

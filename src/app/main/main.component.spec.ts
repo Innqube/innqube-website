@@ -20,6 +20,8 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {ScrollSpyModule} from 'ngx-scrollspy';
 import {TranslateModule} from '@ngx-translate/core';
 import {HttpModule} from '@angular/http';
+import {CustomersSayingsComponent} from '../customers-sayings/customers-sayings.component';
+import {CustomersComponent} from '../customers/customers.component';
 
 describe('MainComponent', () => {
     let component: MainComponent;
@@ -39,7 +41,10 @@ describe('MainComponent', () => {
                 WhoComponent,
                 LetsTalkComponent,
                 FooterComponent,
-                MemberComponent
+                MemberComponent,
+                CustomersSayingsComponent,
+                CustomersComponent,
+                QuoteComponent
             ],
             imports: [
                 ScrollSpyModule.forRoot(),
