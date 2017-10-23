@@ -1,6 +1,15 @@
-<div class="section-container orange">
-    <div class="jumbotron">
-        <app-quote *ngIf="currentQuote" [quote]="currentQuote.quote" [author]="currentQuote.author"></app-quote>
+<div class="section-container grey">
+    <div class="section">
+        <h3 class="titulo-seccion-grey">
+            <span>{{'CUSTOMERS' | translate}}</span>
+        </h3>
+
+        <app-quote *ngIf="currentQuote"
+                   [quote]="currentQuote.quote"
+                   [imagen]="currentQuote.imagen"
+                   [author]="currentQuote.author"
+                   [authorImg]="currentQuote.authorImg"
+                   [role]="currentQuote.role"></app-quote>
         <div class="btn-group">
             <button class="btn btn-darker" type="button" (click)="previous()">
                 <i class="icon-left-open"></i>
@@ -9,5 +18,7 @@
                 <i class="icon-right-open"></i>
             </button>
         </div>
+        <div class="col-md-12" class="separador"></div>
+        <app-customers></app-customers>
     </div>
 </div>

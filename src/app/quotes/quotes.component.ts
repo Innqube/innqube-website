@@ -20,27 +20,36 @@ export class QuotesComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.timerSubscription = Observable.timer(0, 6000).subscribe(() => this.switchToNext());
+        this.timerSubscription = Observable.timer(0, 10000).subscribe(() => this.switchToNext());
         this.translate.onLangChange.subscribe(() => this.loadQuotes());
         this.loadQuotes();
     }
 
     loadQuotes() {
         this.translate
-            .get(['QUOTE1', 'QUOTE2', 'QUOTE3', 'QUOTE1AUTH', 'QUOTE2AUTH', 'QUOTE3AUTH'])
+            .get(['TRIVERO_MSG', 'ABAROA_MSG', 'CONICET_MSG'])
             .subscribe(translated => {
                 this.quotes = [
                     {
-                        quote: translated['QUOTE1'],
-                        author: translated['QUOTE1AUTH']
+                        quote: translated['TRIVERO_MSG'],
+                        imagen: '../../assets/images/customers/tecnica_rivero.png',
+                        author: 'Agustín Rivero',
+                        authorImg: 'https://scontent-eze1-1.xx.fbcdn.net/v/t1.0-1/p160x160/15941326_10154984053694759_3650510600741576606_n.jpg?oh=170124ad15cbbebdd6ab5cd5e446d3bf&oe=5A141ED1',
+                        role: 'Dueño'
                     },
                     {
-                        quote: translated['QUOTE2'],
-                        author: translated['QUOTE2AUTH']
+                        quote: translated['ABAROA_MSG'],
+                        imagen: '../../assets/images/customers/abaroa.png',
+                        author: 'Gonzalo Abaroa',
+                        authorImg: 'https://scontent-eze1-1.xx.fbcdn.net/v/t1.0-1/p160x160/19756472_10212568546664957_2303231259769670395_n.jpg?oh=e0716369b905af263335f5777d47840b&oe=5A581BE5',
+                        role: 'Gerente comercial'
                     },
                     {
-                        quote: translated['QUOTE3'],
-                        author: translated['QUOTE3AUTH']
+                        quote: translated['CONICET_MSG'],
+                        imagen: '../../assets/images/testimonios/diego_libkind.jpg',
+                        author: 'Diego Libkind',
+                        authorImg: '../../assets/images/testimonios/diego_libkind.jpg',
+                        role: 'IPATEC'
                     }
                 ];
                 this.currentQuote = this.quotes[0];

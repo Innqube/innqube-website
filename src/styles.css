@@ -41,6 +41,11 @@ body {
     color: #312b2b;
 }
 
+.grey {
+  background: #f7f7f7;
+  color: #312b2b;
+}
+
 .orange {
     background: #f57e37;
     color: #fff;
@@ -60,7 +65,7 @@ img.brand-dark {
 
 .parallax-background {
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     opacity: 0.5;
     position: absolute;
     top: 0;
@@ -136,6 +141,7 @@ a:hover {
     text-decoration: none;
 }
 
+.titulo-seccion-grey,
 .titulo-seccion {
     position: relative;
 }
@@ -147,6 +153,14 @@ a:hover {
     padding-right: 70px;
 }
 
+.titulo-seccion-grey span {
+  background: #f7f7f7;
+  z-index: 2;
+  position: relative;
+  padding-right: 70px;
+}
+
+.titulo-seccion-grey::after,
 .titulo-seccion::after {
     content: '';
     width: 100%;
@@ -158,4 +172,27 @@ a:hover {
     background: #d8d4ca;
     height: 1px;
     margin-top: 4px;
+}
+
+.img-container {
+  width: 90%;
+  height: auto;
+}
+
+.customer-row {
+  margin-top: 40px;
+}
+
+@media(max-width: 767px) {
+    .customer-row {
+        margin-bottom: 40px;
+    }
+    .img-container {
+        max-width: 75%;
+    }
+}
+
+.separador {
+  border-top: 1px solid #d2d2d2;
+  margin-top: 30px;
 }

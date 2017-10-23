@@ -1,0 +1,8 @@
+<div class="row customer-row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-2 customer-cell" *ngFor="let i of visibleCustomersIndexes">
+        <a [href]="customers[i].link" [title]="customers[i].name" target="_blank">
+            <img class="img-container" [src]="customers[i].image"/>
+        </a>
+    </div>
+</div>

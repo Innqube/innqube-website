@@ -6,3 +6,4 @@
 [![Code Climate](https://codeclimate.com/github/Innqube/innqube-website/badges/gpa.svg)](https://codeclimate.com/github/Innqube/innqube-website)
 
 Innqube: Angular4 based website
+

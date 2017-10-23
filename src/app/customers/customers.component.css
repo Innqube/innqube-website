@@ -1,0 +1,18 @@
+.img-container {
+    filter: saturate(0.1);
+    transition: all 0.5s;
+}
+
+.img-container:hover {
+    filter: saturate(1);
+    transition: all 0.5s;
+}
+
+@media(max-width: 767px) {
+    .customer-cell {
+        max-width: 50%;
+        margin: 20px auto;
+        height: 80px;
+        text-align: center;
+    }
+}

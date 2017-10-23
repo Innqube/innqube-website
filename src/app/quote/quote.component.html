@@ -1,2 +1,29 @@
-<h4>“{{quote}}”</h4>
-<p>{{author}}</p>
+<div class="quote-container">
+    <div class="row quote-row">
+        <div class="col-md-12">
+            <h5 class="quote text-center">“{{quote}}”</h5>
+        </div>
+    </div>
+
+    <div class="row author-row">
+
+        <hr/>
+
+        <div class="col-sm-12 author">
+            <div class="profile-pic">
+                <div>
+                    <img src="{{authorImg}}">
+                </div>
+            </div>
+            <div class="author-name">
+                <div>
+                    {{author}}
+                </div>
+                <div class="role">
+                    {{role}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -25,6 +25,8 @@ import {Ng2PageScrollModule} from 'ng2-page-scroll';
 import {QuoteComponent} from './quote/quote.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { CustomersComponent } from './customers/customers.component';
+import { CustomersSayingsComponent } from './customers-sayings/customers-sayings.component';
 
 export function createTranslateLoader(http: Http) {
     return new TranslateHttpLoader(http, '/assets/i18n/', '.json');
@@ -45,7 +47,9 @@ export function createTranslateLoader(http: Http) {
         QuotesComponent,
         MemberComponent,
         MainComponent,
-        QuoteComponent
+        QuoteComponent,
+        CustomersComponent,
+        CustomersSayingsComponent
     ],
     imports: [
         BrowserModule,
