@@ -1,0 +1,17 @@
+
+a:hover {
+    color: darkblue;
+}
+
+.memberof-container {
+    padding: 15px;
+
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #dddddd;
+    border-width: 1px;
+
+    background: white;
+    display: grid;
+    height: 100px;
+}

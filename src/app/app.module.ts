@@ -27,6 +27,7 @@ import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {CustomersComponent} from './customers/customers.component';
 import {CustomersSayingsComponent} from './customers-sayings/customers-sayings.component';
+import { MemberofComponent } from './memberof/memberof.component';
 
 export function createTranslateLoader(http: Http) {
     return new TranslateHttpLoader(http, '/assets/i18n/', '.json');
@@ -49,7 +50,8 @@ export function createTranslateLoader(http: Http) {
         MainComponent,
         QuoteComponent,
         CustomersComponent,
-        CustomersSayingsComponent
+        CustomersSayingsComponent,
+        MemberofComponent
     ],
     imports: [
         BrowserModule,
