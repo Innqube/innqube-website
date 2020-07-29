@@ -1,6 +1,6 @@
+
+import {timer as observableTimer} from 'rxjs';
 import {Component, OnInit} from '@angular/core';
-import {Observable} from 'rxjs';
-import 'rxjs/add/observable/timer';
 
 @Component({
     selector: 'app-customers',
@@ -10,11 +10,7 @@ import 'rxjs/add/observable/timer';
 export class CustomersComponent implements OnInit {
 
     readonly VISIBLE_CUSTOMERS = 4;
-    customers: [{
-        name: string,
-        link: string,
-        image: string
-    }] = [
+    customers: any = [
         {
             name: 'Técnica Rivero',
             link: 'http://www.tecnicarivero.com.ar',
@@ -79,7 +75,7 @@ export class CustomersComponent implements OnInit {
 
     ngOnInit() {
         this.fillInitialCustomers();
-        Observable.timer(0, 3500).subscribe(() => {
+        observableTimer(0, 3500).subscribe(() => {
             let index: number;
 
             do {
