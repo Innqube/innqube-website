@@ -1,8 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {Http, HttpModule} from '@angular/http';
-
 import {AppComponent} from './app.component';
 import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
@@ -14,11 +12,12 @@ import {WhoComponent} from './who/who.component';
 import {LetsTalkComponent} from './lets-talk/lets-talk';
 import {WorkWithUsComponent} from './work-with-us/work-with-us';
 import {ScrollSpyModule} from 'ngx-scrollspy';
-import {ScrollSpyParallaxModule} from 'ngx-scrollspy/dist/plugin/parallax';
-import {ScrollSpyAffixModule} from 'ngx-scrollspy/dist/plugin/affix';
+import {ScrollSpyParallaxModule} from 'ngx-scrollspy';
+import {ScrollSpyAffixModule} from 'ngx-scrollspy';
 import {QuotesComponent} from './quotes/quotes.component';
 import {MemberComponent} from './member/member.component';
-import {BsDropdownModule, CollapseModule} from 'ngx-bootstrap';
+import {CollapseModule} from 'ngx-bootstrap/collapse';
+import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
 import {AppRoutingModule} from './app-routing.module';
 import {MainComponent} from './main/main.component';
 import {Ng2PageScrollModule} from 'ng2-page-scroll';
@@ -27,8 +26,9 @@ import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {CustomersComponent} from './customers/customers.component';
 import {CustomersSayingsComponent} from './customers-sayings/customers-sayings.component';
+import {HttpClient} from '@angular/common/http';
 
-export function createTranslateLoader(http: Http) {
+export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, '/assets/i18n/', '.json');
 }
 
@@ -54,12 +54,11 @@ export function createTranslateLoader(http: Http) {
     imports: [
         BrowserModule,
         FormsModule,
-        HttpModule,
         TranslateModule.forRoot({
             loader: {
                 provide: TranslateLoader,
                 useFactory: createTranslateLoader,
-                deps: [Http]
+                deps: [HttpClient]
             }
         }),
         ScrollSpyModule.forRoot(),

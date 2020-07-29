@@ -1,6 +1,7 @@
 body {
     color: #5d5454;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Exo', sans-serif;*/
     font-size: 1.7em;
 }
 
@@ -17,6 +18,18 @@ body {
 
 .parallax-background {
     background-position-x: 50% !important;
+    background-repeat: no-repeat;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background-size: contain;*/
+    /* background-attachment: fixed; */
+    /*opacity: 0.5;*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 @media (min-width: 768px) {
@@ -63,20 +76,18 @@ img.brand-dark {
     display: none;
 }
 
-.parallax-background {
-    background-size: cover;
-    /* background-attachment: fixed; */
-    opacity: 0.5;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
+.welcome .parallax-background {
+    background-image: url("./assets/images/welcome.png");
+    /*height:100vh;*/
+    /*height:100%;*/
 }
 
-.welcome .parallax-background {
-    background-image: url("./assets/images/devices.jpg");
+.welcome {
+    background: #ffffff!important;
+}
+
+.welcome .jumbotron {
+    width: 40%;
 }
 
 .what .parallax-background {
@@ -85,7 +96,7 @@ img.brand-dark {
 }
 
 .how .parallax-background {
-    background-image: url("./assets/images/merrel.jpg");
+    background-image: url("./assets/images/how.png");
     opacity: 0.3;
 }
 
@@ -95,8 +106,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Roboto Slab";
-    font-weight: 300;
+    font-family: 'Exo', sans-serif;
+    /*font-weight: 300;*/
 }
 
 h3 {

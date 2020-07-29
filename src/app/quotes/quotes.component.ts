@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {Observable} from 'rxjs/Observable';
+import {Observable} from 'rxjs';
 import 'rxjs/add/observable/timer';
-import {Subscription} from 'rxjs/Subscription';
+import {Subscription} from 'rxjs';
 import {TranslateService} from '@ngx-translate/core';
 
 @Component({

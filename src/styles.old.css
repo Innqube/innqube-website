@@ -205,8 +205,9 @@ a:hover {
 .static-content-cover {
     background-size: cover;
     background-attachment: fixed;
-    opacity: 0.5;
+    /*opacity: 0.5;*/
     position: absolute;
+    width: 50%;
     top: 0;
     bottom: 0;
     left: 0;

@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ScrollSpyParallaxOptions} from 'ngx-scrollspy/dist/plugin/parallax.directive';
+import {ScrollSpyParallaxOptions} from 'ngx-scrollspy';
 
 @Component({
     selector: 'app-why',
