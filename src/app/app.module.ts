@@ -20,13 +20,13 @@ import {CollapseModule} from 'ngx-bootstrap/collapse';
 import {BsDropdownModule} from 'ngx-bootstrap/dropdown';
 import {AppRoutingModule} from './app-routing.module';
 import {MainComponent} from './main/main.component';
-import {Ng2PageScrollModule} from 'ng2-page-scroll';
 import {QuoteComponent} from './quote/quote.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {CustomersComponent} from './customers/customers.component';
 import {CustomersSayingsComponent} from './customers-sayings/customers-sayings.component';
 import {HttpClient} from '@angular/common/http';
+import {NgxPageScrollCoreModule} from 'ngx-page-scroll-core';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, '/assets/i18n/', '.json');
@@ -66,7 +66,7 @@ export function createTranslateLoader(http: HttpClient) {
         ScrollSpyAffixModule,
         BsDropdownModule.forRoot(),
         CollapseModule.forRoot(),
-        Ng2PageScrollModule.forRoot(),
+        NgxPageScrollCoreModule,
         ReactiveFormsModule,
         AppRoutingModule
     ],

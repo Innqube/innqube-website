@@ -10,18 +10,18 @@ import {HowComponent} from '../how/how.component';
 import {WhoComponent} from '../who/who.component';
 import {LetsTalkComponent} from '../lets-talk/lets-talk';
 import {FooterComponent} from '../footer/footer.component';
-import {ScrollSpyAffixModule} from 'ngx-scrollspy/dist/plugin/affix';
+import {ScrollSpyAffixModule} from 'ngx-scrollspy';
 import {CollapseModule} from 'ngx-bootstrap';
-import {Ng2PageScrollModule} from 'ng2-page-scroll';
-import {ScrollSpyParallaxModule} from 'ngx-scrollspy/dist/plugin/parallax';
+import {ScrollSpyParallaxModule} from 'ngx-scrollspy';
 import {QuoteComponent} from '../quote/quote.component';
 import {MemberComponent} from '../member/member.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {ScrollSpyModule} from 'ngx-scrollspy';
 import {TranslateModule} from '@ngx-translate/core';
-import {HttpModule} from '@angular/http';
 import {CustomersSayingsComponent} from '../customers-sayings/customers-sayings.component';
 import {CustomersComponent} from '../customers/customers.component';
+import {NgxPageScrollCoreModule} from 'ngx-page-scroll-core';
+import {HttpClientModule} from '@angular/common/http';
 
 describe('MainComponent', () => {
     let component: MainComponent;
@@ -51,10 +51,10 @@ describe('MainComponent', () => {
                 ScrollSpyAffixModule,
                 ScrollSpyParallaxModule,
                 CollapseModule.forRoot(),
-                Ng2PageScrollModule.forRoot(),
+                NgxPageScrollCoreModule,
                 TranslateModule.forRoot(),
                 ReactiveFormsModule,
-                HttpModule
+                HttpClientModule
             ]
         }).compileComponents();
     }));

@@ -1,10 +1,10 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {WhatComponent} from './what.component';
-import {ScrollSpyParallaxModule} from 'ngx-scrollspy/dist/plugin/parallax';
-import {Ng2PageScrollModule} from 'ng2-page-scroll';
+import {ScrollSpyParallaxModule} from 'ngx-scrollspy';
 import {ScrollSpyModule} from 'ngx-scrollspy';
 import {TranslateModule} from '@ngx-translate/core';
+import {NgxPageScrollCoreModule} from 'ngx-page-scroll-core';
 
 describe('WhatComponent', () => {
     let component: WhatComponent;
@@ -16,7 +16,7 @@ describe('WhatComponent', () => {
             imports: [
                 ScrollSpyModule.forRoot(),
                 ScrollSpyParallaxModule,
-                Ng2PageScrollModule.forRoot(),
+                NgxPageScrollCoreModule,
                 TranslateModule.forRoot()
             ]
         }).compileComponents();

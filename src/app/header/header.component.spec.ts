@@ -1,13 +1,13 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {HeaderComponent} from './header.component';
-import {ScrollSpyAffixModule} from 'ngx-scrollspy/dist/plugin/affix';
+import {ScrollSpyAffixModule} from 'ngx-scrollspy';
 import {CollapseModule} from 'ngx-bootstrap';
-import {Ng2PageScrollModule} from 'ng2-page-scroll';
 import {ScrollSpyModule} from 'ngx-scrollspy';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {Http, HttpModule} from '@angular/http';
+import {NgxPageScrollCoreModule} from 'ngx-page-scroll-core';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 describe('HeaderComponent', () => {
     let component: HeaderComponent;
@@ -20,15 +20,15 @@ describe('HeaderComponent', () => {
                 ScrollSpyAffixModule,
                 ScrollSpyModule.forRoot(),
                 CollapseModule.forRoot(),
-                Ng2PageScrollModule.forRoot(),
+                NgxPageScrollCoreModule,
                 TranslateModule.forRoot({
                     loader: {
                         provide: TranslateLoader,
                         useFactory: http => new TranslateHttpLoader(http, '/assets/i18n/', '.json'),
-                        deps: [Http]
+                        deps: [HttpClient]
                     }
                 }),
-                HttpModule
+                HttpClientModule
             ]
         }).compileComponents();
     }));
