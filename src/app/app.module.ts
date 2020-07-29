@@ -25,8 +25,8 @@ import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {CustomersComponent} from './customers/customers.component';
 import {CustomersSayingsComponent} from './customers-sayings/customers-sayings.component';
-import {HttpClient} from '@angular/common/http';
-import {NgxPageScrollCoreModule} from 'ngx-page-scroll-core';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {NgxPageScrollModule} from 'ngx-page-scroll';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, '/assets/i18n/', '.json');
@@ -66,9 +66,10 @@ export function createTranslateLoader(http: HttpClient) {
         ScrollSpyAffixModule,
         BsDropdownModule.forRoot(),
         CollapseModule.forRoot(),
-        NgxPageScrollCoreModule,
+        NgxPageScrollModule,
         ReactiveFormsModule,
-        AppRoutingModule
+        AppRoutingModule,
+        HttpClientModule
     ],
     bootstrap: [AppComponent]
 })
