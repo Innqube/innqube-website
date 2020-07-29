@@ -1,7 +1,6 @@
+
+import {timer as observableTimer, Observable, Subscription} from 'rxjs';
 import {Component, OnInit} from '@angular/core';
-import {Observable} from 'rxjs';
-import 'rxjs/add/observable/timer';
-import {Subscription} from 'rxjs';
 import {TranslateService} from '@ngx-translate/core';
 
 @Component({
@@ -20,7 +19,7 @@ export class QuotesComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.timerSubscription = Observable.timer(0, 10000).subscribe(() => this.switchToNext());
+        this.timerSubscription = observableTimer(0, 10000).subscribe(() => this.switchToNext());
         this.translate.onLangChange.subscribe(() => this.loadQuotes());
         this.loadQuotes();
     }
