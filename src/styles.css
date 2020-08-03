@@ -67,6 +67,7 @@ img.brand-dark {
 .welcome .parallax-background {
     background-image: url("./assets/images/welcome.png");
     background-size: contain !important;
+    top: 0;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and ( min--moz-device-pixel-ratio: 1.25), only screen and ( -o-min-device-pixel-ratio: 1.25/1), only screen and ( min-device-pixel-ratio: 1.25), only screen and ( min-resolution: 200dpi), only screen and ( min-resolution: 1.25dppx) {
@@ -82,7 +83,6 @@ img.brand-dark {
 .how .parallax-background {
     background-image: url("./assets/images/how.png");
     background-size: cover;
-    top: -195px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and ( min--moz-device-pixel-ratio: 1.25), only screen and ( -o-min-device-pixel-ratio: 1.25/1), only screen and ( min-device-pixel-ratio: 1.25), only screen and ( min-resolution: 200dpi), only screen and ( min-resolution: 1.25dppx) {
@@ -97,8 +97,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Gotham', sans-serif;
-    /*font-weight: 300;*/
+    font-weight: bold;
 }
 
 h3 {

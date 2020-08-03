@@ -1,0 +1,99 @@
+h5 span {
+    text-transform: uppercase;
+}
+
+.background-grey {
+    background-color: #f5f6fb;
+    height: 330px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.lines-left {
+    background-image: url("../../assets/images/lines_left.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 7px;
+    width: 123px;
+    top: 100px;
+    bottom: 0;
+    left: -90px;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and ( min--moz-device-pixel-ratio: 1.25), only screen and ( -o-min-device-pixel-ratio: 1.25/1), only screen and ( min-device-pixel-ratio: 1.25), only screen and ( min-resolution: 200dpi), only screen and ( min-resolution: 1.25dppx) {
+    .lines-left {
+        background-image: url("../../assets/images/lines_left@2x.png");
+    }
+}
+
+.lines-right {
+    background-image: url("../../assets/images/lines_right.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 640px;
+    width: 635px;
+    top: 330px;
+    bottom: 0;
+    /*left: 0;*/
+    right: -90px;
+    position: absolute;
+    z-index: 1;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and ( min--moz-device-pixel-ratio: 1.25), only screen and ( -o-min-device-pixel-ratio: 1.25/1), only screen and ( min-device-pixel-ratio: 1.25), only screen and ( min-resolution: 200dpi), only screen and ( min-resolution: 1.25dppx) {
+    .lines-right {
+        background-image: url("../../assets/images/lines_right@2x.png");
+    }
+}
+
+
+.office {
+    background-image: url("../../assets/images/office.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 371px;
+    width: 725px;
+    float: right;
+    position: relative;
+    right: -90px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and ( min--moz-device-pixel-ratio: 1.25), only screen and ( -o-min-device-pixel-ratio: 1.25/1), only screen and ( min-device-pixel-ratio: 1.25), only screen and ( min-resolution: 200dpi), only screen and ( min-resolution: 1.25dppx) {
+    .office {
+        background-image: url("../../assets/images/office@2x.png");
+    }
+}
+
+.grey-box {
+    background-color: #f5f6f8;
+    border-radius: 5px;
+}
+
+.grey-box h5 {
+    font-weight: 500;
+    font-style: italic;
+    color: #730ab0;
+    line-height: 2;
+}
+
+.workshop {
+    background-image: url("../../assets/images/workshop.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 226px;
+    width: 226px;
+    right: -123px;
+    bottom: -123px;
+    position: absolute;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and ( min--moz-device-pixel-ratio: 1.25), only screen and ( -o-min-device-pixel-ratio: 1.25/1), only screen and ( min-device-pixel-ratio: 1.25), only screen and ( min-resolution: 200dpi), only screen and ( min-resolution: 1.25dppx) {
+    .workshop {
+        background-image: url("../../assets/images/workshop@2x.png");
+    }
+}
