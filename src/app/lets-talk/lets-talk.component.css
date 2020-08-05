@@ -1,18 +1,10 @@
 a {
-    color: #7f7f7f;
+    color: #e3e3e3;
+    text-transform: uppercase;
 }
 
 a:hover {
-    color: #f57e37;
-}
-
-a.btn-orange,
-a.btn-orange:hover {
     color: #fff;
-}
-
-i {
-    font-size: 40px;
 }
 
 p {
@@ -22,6 +14,7 @@ p {
 label {
     color: #c3c3c3;
     font-size: 12px;
+    text-transform: uppercase;
 }
 
 .form-control {
@@ -38,3 +31,74 @@ label {
 .contact-info {
     margin-bottom: 30px;
 }
+
+
+.section-container {
+    background-image: url("../../assets/images/lets-talk.png");
+    background-size: cover;
+    padding: 0px 90px;
+    color: #fff;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and ( min--moz-device-pixel-ratio: 1.25), only screen and ( -o-min-device-pixel-ratio: 1.25/1), only screen and ( min-device-pixel-ratio: 1.25), only screen and ( min-resolution: 200dpi), only screen and ( min-resolution: 1.25dppx) {
+    .section-container  {
+        background-image: url("../../assets/images/lets-talk@2x.png");
+    }
+}
+
+.form {
+    background-image: url("../../assets/images/contact_bg.png");
+    background-size: cover;
+    color: #fff;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and ( min--moz-device-pixel-ratio: 1.25), only screen and ( -o-min-device-pixel-ratio: 1.25/1), only screen and ( min-device-pixel-ratio: 1.25), only screen and ( min-resolution: 200dpi), only screen and ( min-resolution: 1.25dppx) {
+    .form  {
+        background-image: url("../../assets/images/contact_bg@2x.png");
+    }
+}
+
+.group 			  {
+    position:relative;
+    margin-bottom:30px;
+}
+
+
+input, textarea {
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:100%;
+    border:none;
+    color: #fff;
+    border-bottom:1px solid #d9d9d9;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+
+input:focus, textarea:focus {
+    outline:none;
+    border-bottom:2px solid #d9d9d9;
+}
+
+label {
+    color:#d9d9d9;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:-10px;
+    top:20px;
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
+}
+
+input:focus ~ label, input:valid ~ label, textarea:focus ~ label, textarea:valid ~ label {
+    top:-10px;
+    left:0px;
+    font-size:0.7em;
+}
+
+input:focus ~ .bar:before, input:focus ~ .bar:after, textarea:focus ~ .bar:before, textarea:focus ~ .bar:after {
+    width:50%;
+}
+

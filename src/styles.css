@@ -2,7 +2,7 @@ body {
     color: #5d5454;
     font-family: 'Open Sans', sans-serif;
     /*font-family: 'Exo', sans-serif;*/
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .section-container {
@@ -18,8 +18,9 @@ body {
 
 .parallax-background {
     background-position-x: 50% !important;
+    background-position-y: 100% !important;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -28,16 +29,50 @@ body {
     z-index: 1;
 }
 
+.brand-dark {
+    background-image: url("./assets/images/logo_dark.png");
+    background-size: contain;
+    width: 184px;
+    height: 44px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and ( min--moz-device-pixel-ratio: 1.25), only screen and ( -o-min-device-pixel-ratio: 1.25/1), only screen and ( min-device-pixel-ratio: 1.25), only screen and ( min-resolution: 200dpi), only screen and ( min-resolution: 1.25dppx) {
+    .brand-dark {
+        background-image: url("./assets/images/logo_dark@2x.png");
+    }
+}
+
+.brand-light {
+    background-image: url("./assets/images/logo_header.png");
+    background-size: contain;
+    width: 184px;
+    height: 44px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and ( min--moz-device-pixel-ratio: 1.25), only screen and ( -o-min-device-pixel-ratio: 1.25/1), only screen and ( min-device-pixel-ratio: 1.25), only screen and ( min-resolution: 200dpi), only screen and ( min-resolution: 1.25dppx) {
+    .brand-light {
+        background-image: url("./assets/images/logo_header@2x.png");
+    }
+}
+
 @media (min-width: 768px) {
     .section-container {
         padding: 75px 90px;
     }
 
-    img.brand-dark {
+    /*img.brand-dark {*/
+    /*    display: none;*/
+    /*}*/
+
+    /*.affix img.brand-light {*/
+    /*    display: none;*/
+    /*}*/
+
+    div.brand-dark {
         display: none;
     }
 
-    .affix img.brand-light {
+    .affix div.brand-light {
         display: none;
     }
 }
@@ -52,27 +87,40 @@ body {
     color: #fff;
 }
 
-.affix img.brand-dark {
+/*.affix img.brand-dark {*/
+/*    display: inline-block;*/
+/*}*/
+
+.affix div.brand-dark {
     display: inline-block;
 }
 
-img.brand-dark {
+
+/*img.brand-dark {*/
+/*    display: none;*/
+/*}*/
+
+div.brand-dark {
     display: none;
 }
 
-.affix img.brand-light {
+/*.affix img.brand-light {*/
+/*    display: none;*/
+/*}*/
+
+.affix div.brand-light {
     display: none;
 }
 
 .welcome .parallax-background {
     background-image: url("./assets/images/welcome.png");
-    background-size: contain !important;
+    /*background-size: contain !important;*/
     top: 0;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and ( min--moz-device-pixel-ratio: 1.25), only screen and ( -o-min-device-pixel-ratio: 1.25/1), only screen and ( min-device-pixel-ratio: 1.25), only screen and ( min-resolution: 200dpi), only screen and ( min-resolution: 1.25dppx) {
     .welcome .parallax-background {
-        background: url("./assets/images/welcome@2x.png") no-repeat 0 0;
+        background-image: url("./assets/images/welcome@2x.png");
     }
 }
 
@@ -82,12 +130,12 @@ img.brand-dark {
 
 .how .parallax-background {
     background-image: url("./assets/images/how.png");
-    background-size: cover;
+    /*background-size: cover;*/
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and ( min--moz-device-pixel-ratio: 1.25), only screen and ( -o-min-device-pixel-ratio: 1.25/1), only screen and ( min-device-pixel-ratio: 1.25), only screen and ( min-resolution: 200dpi), only screen and ( min-resolution: 1.25dppx) {
     .how .parallax-background {
-        background: url("./assets/images/how@2x.png") no-repeat 0 0;
+        background-image: url("./assets/images/how@2x.png");
     }
 }
 
@@ -169,10 +217,6 @@ a:hover {
     height: auto;
 }
 
-.customer-row {
-    margin-top: 40px;
-}
-
 @media (max-width: 767px) {
     .customer-row {
         margin-bottom: 40px;
@@ -192,4 +236,12 @@ a:hover {
     border: 2px solid #fff;
     border-radius: 50px;
     padding: 10px 25px 10px 30px;
+}
+
+.card {
+    border-radius: 12px;
+    border-width: 0px;
+    -moz-box-shadow: 0px 0px 0px rgba(68,68,68,0.6);
+    -webkit-box-shadow: 0px 0px 0px rgba(68,68,68,0.6);
+    box-shadow: 0px 0px 10px 2px rgb(68 68 68 / 0.15);
 }

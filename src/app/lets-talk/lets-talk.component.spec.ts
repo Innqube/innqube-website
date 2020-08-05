@@ -1,6 +1,6 @@
 import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import {LetsTalkComponent} from './lets-talk';
+import {LetsTalkComponent} from './lets-talk.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {BaseRequestOptions, Http} from '@angular/http';
 import {MockBackend} from '@angular/http/testing';

@@ -20,4 +20,8 @@ export class HeaderComponent implements OnInit {
         this.translate.use(lang);
     }
 
+    currentLanguage() {
+        return this.translate.currentLang;
+    }
+
 }

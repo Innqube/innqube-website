@@ -8,7 +8,7 @@ import {WhatComponent} from '../what/what.component';
 import {QuotesComponent} from '../quotes/quotes.component';
 import {HowComponent} from '../how/how.component';
 import {WhoComponent} from '../who/who.component';
-import {LetsTalkComponent} from '../lets-talk/lets-talk';
+import {LetsTalkComponent} from '../lets-talk/lets-talk.component';
 import {FooterComponent} from '../footer/footer.component';
 import {ScrollSpyAffixModule} from 'ngx-scrollspy';
 import {CollapseModule} from 'ngx-bootstrap';

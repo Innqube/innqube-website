@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
     selector: 'app-quote',
@@ -12,11 +12,16 @@ export class QuoteComponent implements OnInit {
     @Input() author: string;
     @Input() role: string;
     @Input() authorImg: string;
+    @Output() changeIndexEvt: EventEmitter<any> = new EventEmitter<any>();
 
     constructor() {
     }
 
     ngOnInit() {
+    }
+
+    changeIndex(i) {
+        this.changeIndexEvt.emit(i);
     }
 
 }

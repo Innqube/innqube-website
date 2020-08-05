@@ -1,29 +1,19 @@
-<div class="quote-container">
-    <div class="row quote-row">
-        <div class="col-md-12">
-            <h5 class="quote text-xs-center">“{{quote}}”</h5>
-        </div>
+<div class="card flex-row p-5 m-5">
+    <a class="btn btn-orange btn-left"
+       (click)="changeIndex(-1)">
+        <i class="fas fa-chevron-left"></i>
+    </a>
+    <a class="btn btn-orange btn-right"
+       (click)="changeIndex(1)">
+        <i class="fas fa-chevron-right"></i>
+    </a>
+    <div class="profile-pic mr-4">
+        <img src="{{authorImg}}">
     </div>
-
-    <div class="row author-row">
-
-        <hr/>
-
-        <div class="col-sm-12 author">
-            <div class="profile-pic">
-                <div>
-                    <img src="{{authorImg}}">
-                </div>
-            </div>
-            <div class="author-name">
-                <div>
-                    {{author}}
-                </div>
-                <div class="role">
-                    {{role}}
-                </div>
-            </div>
-        </div>
+    <div class="ml-2 flex-column">
+        <span class="quote">“{{quote}}”</span>
+        <div class="divider"></div>
+        <div class="author">{{author}}</div>
+        <div class="role">{{role}}</div>
     </div>
-
 </div>

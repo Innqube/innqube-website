@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+ import {Component, OnInit} from '@angular/core';
 
 @Component({
     selector: 'app-customers-sayings',
@@ -7,6 +7,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class CustomersSayingsComponent implements OnInit {
 
+    active = 0;
     quotes = [
         {
             quote: 'CONICET_MSG',
@@ -31,7 +32,10 @@ export class CustomersSayingsComponent implements OnInit {
         }
     ];
 
-    constructor() {
+    onIndexChange(i) {
+        const length = this.quotes.length;
+        this.active = this.active + i;
+        this.active = this.active < 0 ? length - 1 : this.active === length ? 0 : this.active;
     }
 
     ngOnInit() {

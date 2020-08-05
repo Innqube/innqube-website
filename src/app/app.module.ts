@@ -9,7 +9,7 @@ import {WhyComponent} from './why/why.component';
 import {WhatComponent} from './what/what.component';
 import {HowComponent} from './how/how.component';
 import {WhoComponent} from './who/who.component';
-import {LetsTalkComponent} from './lets-talk/lets-talk';
+import {LetsTalkComponent} from './lets-talk/lets-talk.component';
 import {WorkWithUsComponent} from './work-with-us/work-with-us';
 import {ScrollSpyModule} from 'ngx-scrollspy';
 import {ScrollSpyParallaxModule} from 'ngx-scrollspy';

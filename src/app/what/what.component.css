@@ -22,14 +22,6 @@ h6 {
     padding-bottom: 0;
 }
 
-.card {
-    border-radius: 12px;
-    border-width: 0px;
-    -moz-box-shadow: 0px 0px 0px rgba(68,68,68,0.6);
-    -webkit-box-shadow: 0px 0px 0px rgba(68,68,68,0.6);
-    box-shadow: 0px 0px 10px 2px rgb(68 68 68 / 0.15);
-}
-
 .cards {
     bottom: -90px;
     position: relative;
