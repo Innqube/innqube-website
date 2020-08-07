@@ -5,8 +5,8 @@
         <h3 class="titulo-seccion text-center mt-3 mb-3">
             <span>{{'WHO_WE_ARE' | translate}}</span>
         </h3>
-        <div class="d-flex align-items-center justify-content-center p-5">
-            <div class="text-center">
+        <div class="d-flex row align-items-center justify-content-center">
+            <div class="col-sm-4 text-center">
                 <app-member [name]="'ENRIQUE VIARD'"
                             [degree]="'SYSTEMS_DEGREE' | translate"
                             [imgSrc]="'../../assets/images/eviard.jpg'"
@@ -14,7 +14,7 @@
                             [github]="'https://github.com/enriqueviard'">
                 </app-member>
             </div>
-            <div class="text-center">
+            <div class="col-sm-4 text-center">
                 <app-member [name]="'DIEGO FERNÁNDEZ SZAMA'"
                             [degree]="'COMPUTER_ENGINEER' | translate"
                             [imgSrc]="'../../assets/images/dfernandez.jpg'"
@@ -22,7 +22,7 @@
                             [github]="'https://github.com/diegofsza'">
                 </app-member>
             </div>
-            <div class="text-center">
+            <div class="col-sm-4 text-center">
                 <app-member [name]="'TOMÁS CHRISTIE'"
                             [degree]="'COMPUTER_ENGINEER' | translate"
                             [imgSrc]="'../../assets/images/tchristie.jpg'"
@@ -32,29 +32,27 @@
             </div>
         </div>
 
-        <div style="position: relative">
 
-            <div class="d-flex flex-row justify-content-between mr-5 ml-5 p-5">
-                <div class="col-sm-4">
-
-                    <h5 class="mb-5">
-                        <span>{{'WHY_WE_CREATED_INNQUBE' | translate}}</span>
-                    </h5>
-                    <p [innerHTML]="'WHY_WE_CREATED_INNQUBE_2' | translate"></p>
-                </div>
-                <div class="office"></div>
-                <div class="lines-left"></div>
-                <div class="lines-right"></div>
+        <div class="row flex-row justify-content-between mt-5 pb-5" style="position: relative">
+            <div class="col-sm-4">
+                <h5 class="mb-5 mt-4 ">
+                    <span>{{'WHY_WE_CREATED_INNQUBE' | translate}}</span>
+                </h5>
+                <p class="mt-5 mb-5 pt-5" [innerHTML]="'WHY_WE_CREATED_INNQUBE_2' | translate"></p>
             </div>
-            <p style="position: absolute; right: 15%;" class="col-sm-4 pt-5" [innerHTML]="'WHY_WE_CREATED_INNQUBE_3' | translate"></p>
+            <div class="office"></div>
+            <div class="lines-left"></div>
+            <div class="lines-right"></div>
+            <div class="row flex-row justify-content-between">
 
-            <div class="d-flex flex-row justify-content-between ml-5 pl-5 pr-5">
                 <div class="grey-box p-5 col-sm-4">
                     <h5 [innerHTML]="'WHY_WE_CREATED_INNQUBE_2_BIS' | translate"></h5>
                     <div class="workshop"></div>
                 </div>
+                <div class="why-text-3 col-sm-4 float-right text-right">
+                    <p [innerHTML]="'WHY_WE_CREATED_INNQUBE_3' | translate"></p>
+                </div>
             </div>
-
         </div>
 
 

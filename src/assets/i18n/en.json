@@ -66,5 +66,6 @@
     "CUSTOMERS": "Our customers",
     "TRIVERO_ROL": "Owner",
     "ABAROA_ROL": "Owner and Commercial manager",
-    "CONICET_ROL": "IPATEC Director, Independent researcher"
+    "CONICET_ROL": "IPATEC Director, Independent researcher",
+    "ADDRESS": "Address"
 }

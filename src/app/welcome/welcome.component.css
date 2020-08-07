@@ -1,18 +1,20 @@
-.top-bar {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    right: 0;
-}
+@media (min-width: 768px) {
+    .top-bar {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
 
-.top-bar div {
-    background: #202020;
-    opacity: 0.5;
-    height: 7px;
-    width: 100%;
-    position: relative;
-    max-width: 80%;
+    .top-bar div {
+        background: #202020;
+        opacity: 0.5;
+        height: 7px;
+        width: 100%;
+        position: relative;
+        max-width: 80%;
+    }
 }
 
 .jumbotron {
@@ -39,6 +41,7 @@ p {
     p {
         /*font-size: 30px;*/
     }
+
     .title {
         /*font-family: "Roboto Slab";*/
         /*font-weight: 300;*/

@@ -66,5 +66,6 @@
     "TRIVERO_ROL": "Dueño",
     "ABAROA_ROL": "Dueño y Gerente Comercial",
     "CONICET_ROL": "Director del IPATEC, Investigador Independiente",
-    "CUSTOMERS": "Algunos de nuestros clientes"
+    "CUSTOMERS": "Algunos de nuestros clientes",
+    "ADDRESS": "Dirección"
 }
