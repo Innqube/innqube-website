@@ -1,6 +1,6 @@
 .navbar a {
     color: #fff;
-    font-size: 15px;
+    font-size: 1vw;
     text-transform: uppercase;
 }
 
@@ -115,7 +115,7 @@
         color: #fff;
     }
     .navbar.navbar-transparent.affix {
-        background: rgba(255, 255, 255, 0.7);
+        background: rgba(255, 255, 255, 0.85);
         backdrop-filter: blur(10px);
         border-bottom: 4px solid #f57d36;
         color: #7a0eb8;
