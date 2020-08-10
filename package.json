@@ -26,11 +26,12 @@
         "@ngx-translate/http-loader": "^6.0.0",
         "core-js": "^3.6.5",
         "ngx-bootstrap": "^3.3.0",
-        "ngx-page-scroll-core": "^7.0.3",
         "ngx-page-scroll": "^7.0.3",
+        "ngx-page-scroll-core": "^7.0.3",
         "ngx-scrollspy": "^1.2.1",
         "rxjs": "^6.6.0",
         "rxjs-compat": "^6.6.0",
+        "tsparticles": "^1.17.7",
         "zone.js": "^0.10.3"
     },
     "devDependencies": {
