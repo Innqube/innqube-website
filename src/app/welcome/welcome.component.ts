@@ -71,10 +71,6 @@ export class WelcomeComponent implements OnInit {
             })
             .then(value => console.log('Success', value))
             .catch(error => console.log('Error', error));
-
-        const particles = tsParticles.domItem(0);
-        // particles.play();
-
     }
 
 }
