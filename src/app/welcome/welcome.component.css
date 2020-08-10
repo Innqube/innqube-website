@@ -30,26 +30,19 @@
     margin: 0 auto;
 }
 
-p {
-    /*font-family: "Roboto";*/
-    font-size: 22.5px;
-    font-weight: 100;
-    padding: 40px 0 20px;
+h1 {
+    font-family: 'Gotham', sans-serif;
+    font-weight: bold;
 }
 
-@media (min-width: 768px) {
-    p {
-        /*font-size: 30px;*/
-    }
-
-    .title {
-        /*font-family: "Roboto Slab";*/
-        /*font-weight: 300;*/
-        /*padding: 40px 0;*/
-    }
+p {
+    font-size: 22px;
+    padding: 40px 0 20px;
 }
 
 a {
     color: #fff;
-    /*margin: 80px 0 20px;*/
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Gotham', sans-serif;
 }
