@@ -2,10 +2,11 @@
     color: #fff;
     font-size: 1vw;
     text-transform: uppercase;
+    font-family: 'Gotham', sans-serif;
 }
 
 .navbar a:hover {
-    font-weight: bold;
+    font-weight: 500;
     border-radius: 5px;
 }
 
@@ -14,7 +15,7 @@
 }
 
 .navbar.affix a:hover {
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .nav {
