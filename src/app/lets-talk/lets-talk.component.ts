@@ -16,9 +16,9 @@ export class LetsTalkComponent implements OnInit {
     ngOnInit() {
         this.form = this.formBuilder.group({
             name: null,
+            from: null,
             subject: null,
-            mail: null,
-            message: null
+            body: null
         });
     }
 

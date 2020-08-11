@@ -4,6 +4,35 @@ body {
     font-size: 0.9em;
 }
 
+a {
+    font-family: 'Gotham', sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Gotham', sans-serif;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+h5 {
+    font-size: 1.5em;
+}
+
 .section-container {
     padding: 10px 50px;
     position: relative;
@@ -70,16 +99,6 @@ body {
     }
 }
 
-.grey {
-    background: #f7f7f7;
-    color: #312b2b;
-}
-
-.orange {
-    background: #f57e37;
-    color: #fff;
-}
-
 .affix div.brand-dark {
     display: inline-block;
 }
@@ -91,7 +110,6 @@ div.brand-dark {
 .affix div.brand-light {
     display: none;
 }
-
 
 .welcome {
     clip-path: polygon(0 85%, 0 0, 100% 0, 100% 85%, 50% 100%);
@@ -119,53 +137,11 @@ div.brand-dark {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cb3549", endColorstr="#7e14b7", GradientType=1);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: bold;
-}
-
-h3 {
-    font-size: 2.5em;
-}
-
-h4 {
-    font-size: 2em;
-}
-
-h5 {
-    font-size: 1.5em;
-}
-
-.btn-text-lg {
-    font-size: 20px;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-.titulo-seccion-grey,
 .titulo-seccion {
-    position: relative;
-}
-
-.titulo-seccion span {
-    font-family: 'Gotham', sans-serif;
     font-weight: bold;
     color: #7a0eb8;
     z-index: 2;
     position: relative;
-}
-
-.titulo-seccion-grey span {
-    background: #f7f7f7;
-    z-index: 2;
-    position: relative;
-    padding-right: 70px;
 }
 
 .img-container {
@@ -183,15 +159,16 @@ a:hover {
     }
 }
 
-.separador {
-    border-top: 1px solid #d2d2d2;
-    margin-top: 30px;
-}
-
 .btn-white-outline {
+    color: #fff;
     border: 2px solid #fff;
     border-radius: 50px;
-    padding: 10px 25px 10px 30px;
+    padding: 10px 30px;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .btn-orange {
@@ -206,18 +183,11 @@ a:hover {
     color: #fff;
 }
 
-.btn-violet {
+.btn-purple {
     background: #730ab0 !important;
     color: #fff !important;
     border-radius: 50px;
-    padding: 10px 25px 10px 30px;
-}
-
-.btn-violet-outline {
-    border: 2px solid #730ab0;
-    color: #730ab0 !important;
-    border-radius: 50px;
-    padding: 10px 25px 10px 30px;
+    padding: 10px 30px;
 }
 
 .card {

@@ -1,6 +1,7 @@
 a {
     color: #e3e3e3;
     text-transform: uppercase;
+    font-weight: 500;
 }
 
 a:hover {

@@ -85,6 +85,7 @@ h5 span {
 }
 
 .grey-box h5 {
+    font-family: 'Open Sans', sans-serif;
     font-weight: 500;
     font-style: italic;
     color: #730ab0;
