@@ -5,11 +5,6 @@
     font-family: 'Gotham', sans-serif;
 }
 
-.navbar a:hover {
-    font-weight: 500;
-    border-radius: 5px;
-}
-
 .navbar.affix a {
     color: #7a0eb8;
 }
@@ -135,6 +130,11 @@
 
 .navbar.affix .collapse.navbar-collapse.in.show {
     background: inherit;
+}
+
+.btn {
+    font-weight: bold;
+    top: -6px;
 }
 
 .btn-group {
