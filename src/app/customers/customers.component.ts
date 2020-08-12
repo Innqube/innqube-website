@@ -1,5 +1,6 @@
 import {timer as observableTimer} from 'rxjs';
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, TemplateRef} from '@angular/core';
+import {BsModalRef, BsModalService} from 'ngx-bootstrap/modal';
 
 @Component({
     selector: 'app-customers',
@@ -96,7 +97,13 @@ export class CustomersComponent implements OnInit {
     visibleCustomersIndexes = [];
     lastChangedIndex = 0;
 
-    constructor() {
+    constructor(private modalService: BsModalService) {
+    }
+
+    modalRef: BsModalRef;
+
+    showModal(template: TemplateRef<any>) {
+        this.modalRef = this.modalService.show(template,   Object.assign({}, { class: 'gray modal-lg' }));
     }
 
     ngOnInit() {

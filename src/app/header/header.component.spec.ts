@@ -2,7 +2,7 @@ import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {HeaderComponent} from './header.component';
 import {ScrollSpyAffixModule} from 'ngx-scrollspy';
-import {CollapseModule} from 'ngx-bootstrap';
+import {CollapseModule} from 'ngx-bootstrap/collapse';
 import {ScrollSpyModule} from 'ngx-scrollspy';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';

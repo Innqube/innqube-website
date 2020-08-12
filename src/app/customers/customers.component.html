@@ -1,5 +1,5 @@
 <div class="row customer-row flex-row justify-content-center align-items-center pt-5">
-    <div class="col-sm-2 text-center" *ngFor="let i of visibleCustomersIndexes">
+    <div class="col-sm-12 col-md-6 col-lg-3 col-xl-2 p-4 text-center" *ngFor="let i of visibleCustomersIndexes">
         <a [href]="customers[i].link" [title]="customers[i].name" target="_blank">
             <img class="img-container" [src]="customers[i].image"/>
         </a>
@@ -7,7 +7,26 @@
 
 </div>
 <div class="text-center mt-5">
-    <a class="btn btn-purple text-center" >
+    <a (click)="showModal(template)"
+       class="btn btn-purple text-center">
         {{'SEE_ALL_CUSTOMERS' | translate}}
     </a>
 </div>
+
+<ng-template #template >
+    <div class="modal-header">
+        <h4 class="modal-title pull-left">{{'SEE_ALL_CUSTOMERS' | translate}}</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3 text-center justify-self-center p-5" *ngFor="let c of customers">
+                <a [href]="c.link" [title]="c.name" target="_blank">
+                    <img style="width: 100%" class="" [src]="c.image"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</ng-template>

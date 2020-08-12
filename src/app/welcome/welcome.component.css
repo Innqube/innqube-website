@@ -19,19 +19,13 @@
 
 .jumbotron {
     background: transparent;
-    color: #fff;
 }
 
 .section {
-    min-height: 500px;
-}
-
-.title {
-    margin: 0 auto;
+    color: #fff;
 }
 
 h1 {
-    font-family: 'Gotham', sans-serif;
     font-weight: bold;
 }
 

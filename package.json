@@ -25,7 +25,7 @@
         "@ngx-translate/core": "^13.0.0",
         "@ngx-translate/http-loader": "^6.0.0",
         "core-js": "^3.6.5",
-        "ngx-bootstrap": "^3.3.0",
+        "ngx-bootstrap": "^5.6.1",
         "ngx-page-scroll": "^7.0.3",
         "ngx-page-scroll-core": "^7.0.3",
         "ngx-scrollspy": "^1.2.1",
@@ -36,7 +36,7 @@
     },
     "devDependencies": {
         "@angular-devkit/build-angular": "~0.1000.4",
-        "@angular/cli": "^10.0.4",
+        "@angular/cli": "^10.0.5",
         "@angular/compiler-cli": "^10.0.6",
         "@angular/language-service": "^10.0.6",
         "@types/jasmine": "~2.5.53",

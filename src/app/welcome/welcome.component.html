@@ -1,16 +1,19 @@
-
-<div class="section-container dark welcome" >
+<div class="section-container dark welcome">
     <div class="top-bar d-flex justify-content-center align-items-center">
         <div></div>
     </div>
     <div [scrollSpyParallax]="options" class="parallax-background" id="tsparticles"></div>
-    <div class="section d-flex justify-content-center">
-        <div class="jumbotron text-center">
-            <h1 class="title text-center pt-5 col-sm-8">{{'CUSTOM_DEVELOPMENT' | translate}}</h1>
-            <p class="text-center">{{'CUSTOM_DEVELOPMENT_1' | translate}}</p>
-            <a class="btn btn-white-outline text-center mt-5" href="#letsTalk">
-                {{'LETS_TALK' | translate}}
-            </a>
+    <div class="section">
+        <div class="pb-5 mt-5 d-flex flex-column align-items-center">
+            <div class="row">
+                <h1 class="title text-center mt-5 col-sm-12 col-md-8 col-lg-7 mx-auto">{{'CUSTOM_DEVELOPMENT' | translate}}</h1>
+            </div>
+            <div class="row">
+                <p class="text-center col-sm-12 col-md-9 col-lg-8 mx-auto">{{'CUSTOM_DEVELOPMENT_1' | translate}}</p>
+            </div>
+            <div class="row">
+                <a class="btn btn-white-outline text-center mx-auto m-4" href="#letsTalk">{{'LETS_TALK' | translate}}</a>
+            </div>
         </div>
     </div>
 </div>

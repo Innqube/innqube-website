@@ -11,7 +11,7 @@ import {WhoComponent} from '../who/who.component';
 import {LetsTalkComponent} from '../lets-talk/lets-talk.component';
 import {FooterComponent} from '../footer/footer.component';
 import {ScrollSpyAffixModule} from 'ngx-scrollspy';
-import {CollapseModule} from 'ngx-bootstrap';
+import {CollapseModule} from 'ngx-bootstrap/collapse';
 import {ScrollSpyParallaxModule} from 'ngx-scrollspy';
 import {QuoteComponent} from '../quote/quote.component';
 import {MemberComponent} from '../member/member.component';
@@ -22,6 +22,7 @@ import {CustomersSayingsComponent} from '../customers-sayings/customers-sayings.
 import {CustomersComponent} from '../customers/customers.component';
 import {NgxPageScrollCoreModule} from 'ngx-page-scroll-core';
 import {HttpClientModule} from '@angular/common/http';
+import {ModalModule} from 'ngx-bootstrap/modal';
 
 describe('MainComponent', () => {
     let component: MainComponent;
@@ -54,7 +55,8 @@ describe('MainComponent', () => {
                 NgxPageScrollCoreModule,
                 TranslateModule.forRoot(),
                 ReactiveFormsModule,
-                HttpClientModule
+                HttpClientModule,
+                ModalModule.forRoot()
             ]
         }).compileComponents();
     }));

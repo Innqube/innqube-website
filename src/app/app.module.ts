@@ -27,6 +27,8 @@ import {CustomersComponent} from './customers/customers.component';
 import {CustomersSayingsComponent} from './customers-sayings/customers-sayings.component';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {NgxPageScrollModule} from 'ngx-page-scroll';
+import {ModalModule} from 'ngx-bootstrap/modal';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, '/assets/i18n/', '.json');
@@ -69,7 +71,9 @@ export function createTranslateLoader(http: HttpClient) {
         NgxPageScrollModule,
         ReactiveFormsModule,
         AppRoutingModule,
-        HttpClientModule
+        HttpClientModule,
+        ModalModule.forRoot(),
+        BrowserAnimationsModule
     ],
     bootstrap: [AppComponent]
 })
