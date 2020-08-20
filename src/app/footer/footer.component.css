@@ -24,3 +24,39 @@
     text-shadow: 0 0 1px #000;
     white-space: nowrap;
 }
+
+.navbar {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        background-color: #fff;
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        z-index: 9999999;
+        border-top: 4px solid #a94c8b;
+    }
+
+    .navbar a {
+        float: left;
+        display: block;
+        color: #7a0eb8;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    .navbar a:hover {
+        background-color: #ddd;
+    }
+
+    .navbar a:focus, a:active {
+        color: #f57d36;
+        outline: none;
+    }
+}
