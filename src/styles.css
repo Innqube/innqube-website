@@ -46,31 +46,19 @@ h6 {
 }
 
 .brand-dark {
-    background-image: url("./assets/images/logo_dark.png");
+    background-image: url("./assets/images/company/innqube-dark.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 184px;
     height: 44px;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and ( min--moz-device-pixel-ratio: 1.25), only screen and ( -o-min-device-pixel-ratio: 1.25/1), only screen and ( min-device-pixel-ratio: 1.25), only screen and ( min-resolution: 200dpi), only screen and ( min-resolution: 1.25dppx) {
-    .brand-dark {
-        background-image: url("./assets/images/logo_dark@2x.png");
-    }
 }
 
 .brand-light {
-    background-image: url("./assets/images/logo_header.png");
+    background-image: url("./assets/images/company/innqube-white.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 184px;
     height: 44px;
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and ( min--moz-device-pixel-ratio: 1.25), only screen and ( -o-min-device-pixel-ratio: 1.25/1), only screen and ( min-device-pixel-ratio: 1.25), only screen and ( min-resolution: 200dpi), only screen and ( min-resolution: 1.25dppx) {
-    .brand-light {
-        background-image: url("./assets/images/logo_header@2x.png");
-    }
 }
 
 @media (min-width: 768px) {

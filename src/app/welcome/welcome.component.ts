@@ -57,7 +57,7 @@ export class WelcomeComponent implements OnInit {
                     },
                     shape: {
                         image: {
-                            src: '../../assets/images/logo_dark.png',
+                            src: '../../assets/images/company/innqube-dark.svg',
                             width: 44,
                             height: 44
                         }
