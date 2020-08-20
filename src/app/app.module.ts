@@ -5,7 +5,6 @@ import {AppComponent} from './app.component';
 import {HeaderComponent} from './header/header.component';
 import {FooterComponent} from './footer/footer.component';
 import {WelcomeComponent} from './welcome/welcome.component';
-import {WhyComponent} from './why/why.component';
 import {WhatComponent} from './what/what.component';
 import {HowComponent} from './how/how.component';
 import {WhoComponent} from './who/who.component';
@@ -29,6 +28,7 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {NgxPageScrollModule} from 'ngx-page-scroll';
 import {ModalModule} from 'ngx-bootstrap/modal';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { ProjectsComponent } from './projects/projects.component';
 
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, '/assets/i18n/', '.json');
@@ -40,7 +40,6 @@ export function createTranslateLoader(http: HttpClient) {
         HeaderComponent,
         FooterComponent,
         WelcomeComponent,
-        WhyComponent,
         WhatComponent,
         HowComponent,
         WhoComponent,
@@ -51,7 +50,8 @@ export function createTranslateLoader(http: HttpClient) {
         MainComponent,
         QuoteComponent,
         CustomersComponent,
-        CustomersSayingsComponent
+        CustomersSayingsComponent,
+        ProjectsComponent
     ],
     imports: [
         BrowserModule,

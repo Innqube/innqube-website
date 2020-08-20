@@ -1,0 +1,33 @@
+.img {
+    max-height: 172px;
+    width:100%;
+}
+
+.link {
+    color: #ffffff;
+}
+
+.link:hover {
+    color: #efefef;
+}
+
+.section-container {
+    background-color: #f5f6f8
+}
+
+.eposter {
+    background-color: #28062c;
+}
+
+.eventiando {
+    background-color: #25325d;
+}
+
+.microbrew {
+    background-color: #ff9900;
+}
+
+.gecko {
+    background-color: #1c1e26;
+    height: 100%;
+}
