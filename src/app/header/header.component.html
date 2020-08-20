@@ -19,11 +19,9 @@
             <li class="nav-item">
                 <a pageScroll [pageScrollDuration]="500" [pageScrollOffset]="70" href="#customers" class="nav-link">{{'FOR_WHOM' | translate}}</a>
             </li>
-            <li class="nav-item">
-                <div class="btn-group p-0">
+            <li class="nav-item ml-5">
                     <a [ngStyle]="currentLanguage() === 'en' ? {'color': 'orange'} : {}" class="btn" (click)="changeLanguage('en')" title="English">EN</a>
                     <a [ngStyle]="currentLanguage() === 'es' ? {'color': 'orange'} : {}" class="btn" (click)="changeLanguage('es')" title="Espa&#xF1;ol">ES</a>
-                </div>
             </li>
         </ul>
     </div>
