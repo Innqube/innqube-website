@@ -5,16 +5,28 @@
     <div [collapse]="collapsed" class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav ml-auto">
             <li class="nav-item">
-                <a pageScroll [pageScrollDuration]="500" [pageScrollOffset]="70" href="#what" class="nav-link">{{'WHAT' | translate}}</a>
+                <a pageScroll [pageScrollDuration]="500" [pageScrollOffset]="70" href="#what" class="nav-link">
+                    <span class="d-none d-lg-block">{{'WHAT' | translate}}</span>
+                    <span class="d-lg-none">{{'WHAT_MOBILE' | translate}}</span>
+                </a>
             </li>
             <li class="nav-item">
-                <a pageScroll [pageScrollDuration]="500" [pageScrollOffset]="70" href="#how" class="nav-link">{{'HOW' | translate}}</a>
+                <a pageScroll [pageScrollDuration]="500" [pageScrollOffset]="70" href="#how" class="nav-link">
+                    <span class="d-none d-lg-block">{{'HOW' | translate}}</span>
+                    <span class="d-lg-none">{{'HOW_MOBILE' | translate}}</span>
+                </a>
             </li>
             <li class="nav-item">
-                <a pageScroll [pageScrollDuration]="500" [pageScrollOffset]="70" href="#who" class="nav-link">{{'WHO' | translate}}</a>
+                <a pageScroll [pageScrollDuration]="500" [pageScrollOffset]="70" href="#who" class="nav-link">
+                    <span class="d-none d-lg-block">{{'WHO' | translate}}</span>
+                    <span class="d-lg-none">{{'WHO_MOBILE' | translate}}</span>
+                </a>
             </li>
             <li class="nav-item">
-                <a pageScroll [pageScrollDuration]="500" [pageScrollOffset]="70" href="#customers" class="nav-link">{{'FOR_WHOM' | translate}}</a>
+                <a pageScroll [pageScrollDuration]="500" [pageScrollOffset]="70" href="#customers" class="nav-link">
+                    <span class="d-none d-lg-block">{{'FOR_WHOM' | translate}}</span>
+                    <span class="d-lg-none">{{'FOR_WHOM_MOBILE' | translate}}</span>
+                </a>
             </li>
             <li class="nav-item ml-5">
                     <a [ngStyle]="currentLanguage() === 'en' ? {'color': 'orange'} : {}" class="btn" (click)="changeLanguage('en')" title="English">EN</a>

@@ -5,6 +5,8 @@
 
 .link {
     color: #ffffff;
+    width: 100%;
+    /*font-size: 2vw;*/
 }
 
 .link:hover {
@@ -36,7 +38,8 @@
     background-image: url('../../assets/images/projects/iphones.png');
     background-repeat: no-repeat;
     background-size: contain;
-    width: 456px;
+    width: 100%;
+    max-width: 456px;
     height: 465px;
 }
 
