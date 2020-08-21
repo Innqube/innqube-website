@@ -6,11 +6,13 @@
                 <img class="mb-5 p-3" width="100%" src="assets/images/projects/flying_phones.png">
                 <a href="https://apps.apple.com/us/developer/innqube-s-a-s/id1150942620"
                    target="_blank">
-                    <img class="m-2" src="../../assets/images/stores/appstore_en.svg">
+                    <img *ngIf="currentLanguage() === 'en'" class="m-2" src="../../assets/images/stores/appstore_en.svg">
+                    <img *ngIf="currentLanguage() === 'es'" class="m-2" src="../../assets/images/stores/appstore_es.svg">
                 </a>
                 <a href="https://play.google.com/store/apps/developer?id=InnQube"
                    target="_blank">
-                    <img class="m-2" height="40" src="../../assets/images/stores/googleplay_en@2x.png">
+                    <img *ngIf="currentLanguage() === 'en'" class="m-2" src="../../assets/images/stores/googleplay_en.svg" height="60">
+                    <img *ngIf="currentLanguage() === 'es'" class="m-2" src="../../assets/images/stores/googleplay_es.svg" height="60">
                 </a>
             </div>
             <div class="col-sm-12 col-lg-6 align-self-center p-4">
