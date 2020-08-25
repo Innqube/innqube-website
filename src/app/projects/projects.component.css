@@ -1,6 +1,6 @@
 @media (max-width: 767px) {
     .section-container {
-        padding: 0px 10px;
+        padding: 10px 10px;
     }
 }
 
@@ -44,6 +44,7 @@
     background-image: url('../../assets/images/projects/iphones.png');
     background-repeat: no-repeat;
     background-size: contain;
+    background-position-y: 50%;
     width: 100%;
     max-width: 456px;
     height: 465px;
