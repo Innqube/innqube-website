@@ -2,9 +2,8 @@ import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {LetsTalkComponent} from './lets-talk.component';
 import {ReactiveFormsModule} from '@angular/forms';
-import {BaseRequestOptions, Http} from '@angular/http';
-import {MockBackend} from '@angular/http/testing';
 import {TranslateModule} from '@ngx-translate/core';
+import {HttpClient} from '@angular/common/http';
 
 describe('LetsTalkComponent', () => {
     let component: LetsTalkComponent;
@@ -17,16 +16,16 @@ describe('LetsTalkComponent', () => {
                 TranslateModule.forRoot(),
                 ReactiveFormsModule
             ],
-            providers: [
-                MockBackend,
-                BaseRequestOptions, {
-                    provide: Http,
-                    useFactory: (mockBackend, options) => {
-                        return new Http(mockBackend, options);
-                    },
-                    deps: [MockBackend, BaseRequestOptions]
-                }
-            ]
+            // providers: [
+            //     MockBackend,
+            //     BaseRequestOptions, {
+            //         provide: HttpClient,
+            //         useFactory: (mockBackend, options) => {
+            //             return new Http(mockBackend, options);
+            //         },
+            //         deps: [MockBackend, BaseRequestOptions]
+            //     }
+            // ]
         }).compileComponents();
     }));
 

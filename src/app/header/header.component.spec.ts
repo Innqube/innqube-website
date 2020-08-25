@@ -8,6 +8,7 @@ import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {NgxPageScrollCoreModule} from 'ngx-page-scroll-core';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 describe('HeaderComponent', () => {
     let component: HeaderComponent;
@@ -28,7 +29,8 @@ describe('HeaderComponent', () => {
                         deps: [HttpClient]
                     }
                 }),
-                HttpClientModule
+                HttpClientModule,
+                BrowserAnimationsModule
             ]
         }).compileComponents();
     }));
@@ -45,15 +47,15 @@ describe('HeaderComponent', () => {
 
     it('should set spanish language when spanish flag is clicked', () => {
         spyOn(component, 'changeLanguage');
-        const buttons = fixture.nativeElement.querySelectorAll('button');
-        buttons[2].click();
+        const buttons = fixture.nativeElement.querySelectorAll('a');
+        buttons[buttons.length - 1].click();
         expect(component.changeLanguage).toHaveBeenCalledWith('es');
     });
 
     it('should set english language when uk flag is clicked', () => {
         spyOn(component, 'changeLanguage');
-        const buttons = fixture.nativeElement.querySelectorAll('button');
-        buttons[1].click();
+        const buttons = fixture.nativeElement.querySelectorAll('a');
+        buttons[buttons.length - 2].click();
         expect(component.changeLanguage).toHaveBeenCalledWith('en');
     });
 

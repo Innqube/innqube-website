@@ -4,6 +4,7 @@ import {QuotesComponent} from './quotes.component';
 import {QuoteComponent} from '../quote/quote.component';
 import {TranslateModule} from '@ngx-translate/core';
 import {CustomersComponent} from '../customers/customers.component';
+import {ModalModule} from 'ngx-bootstrap/modal';
 
 describe('QuotesComponent', () => {
     let component: QuotesComponent;
@@ -21,7 +22,8 @@ describe('QuotesComponent', () => {
                 CustomersComponent
             ],
             imports: [
-                TranslateModule.forRoot()
+                TranslateModule.forRoot(),
+                ModalModule.forRoot()
             ]
         }).compileComponents();
     }));

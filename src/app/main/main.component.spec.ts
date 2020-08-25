@@ -3,7 +3,6 @@ import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 import {MainComponent} from './main.component';
 import {HeaderComponent} from '../header/header.component';
 import {WelcomeComponent} from '../welcome/welcome.component';
-import {WhyComponent} from '../why/why.component';
 import {WhatComponent} from '../what/what.component';
 import {QuotesComponent} from '../quotes/quotes.component';
 import {HowComponent} from '../how/how.component';
@@ -23,6 +22,7 @@ import {CustomersComponent} from '../customers/customers.component';
 import {NgxPageScrollCoreModule} from 'ngx-page-scroll-core';
 import {HttpClientModule} from '@angular/common/http';
 import {ModalModule} from 'ngx-bootstrap/modal';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 describe('MainComponent', () => {
     let component: MainComponent;
@@ -34,7 +34,6 @@ describe('MainComponent', () => {
                 MainComponent,
                 HeaderComponent,
                 WelcomeComponent,
-                WhyComponent,
                 WhatComponent,
                 QuotesComponent,
                 QuoteComponent,
@@ -56,7 +55,8 @@ describe('MainComponent', () => {
                 TranslateModule.forRoot(),
                 ReactiveFormsModule,
                 HttpClientModule,
-                ModalModule.forRoot()
+                ModalModule.forRoot(),
+                BrowserAnimationsModule
             ]
         }).compileComponents();
     }));
