@@ -5,6 +5,7 @@
             <h3>{{'HOW_WE_WORK' | translate}}</h3>
             <p [innerHTML]="'HOW_WE_WORK_EXPLANATION' | translate"></p>
         </div>
-        <div class="how-we-work mt-5 mx-auto"></div>
+        <div *ngIf="currentLanguage() === 'es'" class="how-we-work-es mt-5 mx-auto"></div>
+        <div *ngIf="currentLanguage() === 'en'" class="how-we-work-en mt-5 mx-auto"></div>
     </div>
 </div>
