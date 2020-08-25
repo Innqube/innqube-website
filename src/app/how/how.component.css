@@ -7,6 +7,13 @@
     z-index: 1;
 }
 
+@media (max-width: 767px) {
+    .section-container {
+        padding: 10px 20px;
+    }
+}
+
+
 img {
     display: block;
     margin: 0 auto;
@@ -20,8 +27,6 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    margin-left: -50px!important;
-    margin-right: -50px!important;
 }
 
 .how-we-work-en {
@@ -32,8 +37,6 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    margin-left: -50px!important;
-    margin-right: -50px!important;
 }
 
 @media (min-width: 768px) {
